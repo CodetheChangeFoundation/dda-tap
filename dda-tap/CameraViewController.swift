@@ -8,8 +8,21 @@
 
 import UIKit
 
-class CameraViewController: UIViewController {
+class CameraViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    
+    var imagePickerController : UIImagePickerController!
+    
+    
+    @IBOutlet weak var imageView: UIImageView!
 
+    
+    @IBAction func onPhotoButton(_ sender: Any) {
+        imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.sourceType = .camera
+        present(imagePickerController, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
