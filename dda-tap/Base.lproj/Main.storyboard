@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IjG-hV-AdO">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IjG-hV-AdO">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,14 +39,14 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjl-O6-WcB">
                                         <rect key="frame" x="0.0" y="0.0" width="57" height="63"/>
-                                        <state key="normal" title="Button" image="text.justify" catalog="system"/>
+                                        <state key="normal" title="Button" image="text.justify"/>
                                         <connections>
                                             <segue destination="Mbx-Pc-lBf" kind="show" id="bV8-gb-T0K"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6e-EK-DFB">
                                         <rect key="frame" x="307" y="0.0" width="57" height="63"/>
-                                        <state key="normal" title="Button" image="gear" catalog="system"/>
+                                        <state key="normal" title="Button" image="gear"/>
                                         <connections>
                                             <segue destination="CAw-dy-dv1" kind="show" id="Qdt-5k-xBd"/>
                                         </connections>
@@ -65,11 +68,11 @@
                                                             <constraint firstAttribute="height" constant="52" id="EqU-Oc-HTu"/>
                                                             <constraint firstAttribute="width" constant="157" id="ZOy-pL-dHV"/>
                                                         </constraints>
-                                                        <color key="pageIndicatorTintColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="pageIndicatorTintColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </pageControl>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="C9L-4v-E9F">
-                                                        <rect key="frame" x="0.0" y="53" width="157" height="125.5"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" translatesAutoresizingMaskIntoConstraints="NO" id="C9L-4v-E9F">
+                                                        <rect key="frame" x="0.0" y="52" width="157" height="128"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="128" id="czH-9U-pbe"/>
                                                             <constraint firstAttribute="width" constant="157" id="tVE-0K-KTf"/>
@@ -96,11 +99,11 @@
                                                             <constraint firstAttribute="height" constant="52" id="H59-cM-A44"/>
                                                             <constraint firstAttribute="width" constant="157" id="njR-0D-BXY"/>
                                                         </constraints>
-                                                        <color key="pageIndicatorTintColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="pageIndicatorTintColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </pageControl>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oQM-4q-Nqn">
-                                                        <rect key="frame" x="0.0" y="53" width="157" height="125.5"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" translatesAutoresizingMaskIntoConstraints="NO" id="oQM-4q-Nqn">
+                                                        <rect key="frame" x="0.0" y="52" width="157" height="128"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="128" id="E9L-2e-lOL"/>
                                                             <constraint firstAttribute="width" constant="157" id="JcO-8j-eQM"/>
@@ -132,11 +135,11 @@
                                                             <constraint firstAttribute="width" constant="157" id="Mxt-t6-vhi"/>
                                                             <constraint firstAttribute="height" constant="52" id="ooz-zu-gLc"/>
                                                         </constraints>
-                                                        <color key="pageIndicatorTintColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="pageIndicatorTintColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </pageControl>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VAe-dp-klN">
-                                                        <rect key="frame" x="0.0" y="53" width="157" height="125.5"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" translatesAutoresizingMaskIntoConstraints="NO" id="VAe-dp-klN">
+                                                        <rect key="frame" x="0.0" y="52" width="157" height="128"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="128" id="Yz2-ow-O9I"/>
                                                             <constraint firstAttribute="width" constant="157" id="d7z-ye-VT7"/>
@@ -163,11 +166,11 @@
                                                             <constraint firstAttribute="width" constant="157" id="AWT-01-SqP"/>
                                                             <constraint firstAttribute="height" constant="52" id="TBZ-fj-7z3"/>
                                                         </constraints>
-                                                        <color key="pageIndicatorTintColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="pageIndicatorTintColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </pageControl>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Cyv-IP-gsZ">
-                                                        <rect key="frame" x="0.0" y="53" width="157" height="125.5"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" translatesAutoresizingMaskIntoConstraints="NO" id="Cyv-IP-gsZ">
+                                                        <rect key="frame" x="0.0" y="52" width="157" height="128"/>
                                                     </imageView>
                                                 </subviews>
                                                 <constraints>
@@ -191,11 +194,11 @@
                                                             <constraint firstAttribute="height" constant="52" id="BU3-4a-bbQ"/>
                                                             <constraint firstAttribute="width" constant="157" id="NXb-5N-5WG"/>
                                                         </constraints>
-                                                        <color key="pageIndicatorTintColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="pageIndicatorTintColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </pageControl>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RBH-By-bqS">
-                                                        <rect key="frame" x="0.0" y="53" width="157" height="125.5"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" translatesAutoresizingMaskIntoConstraints="NO" id="RBH-By-bqS">
+                                                        <rect key="frame" x="0.0" y="52" width="157" height="128"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="157" id="Px3-LQ-2oY"/>
                                                             <constraint firstAttribute="height" constant="128" id="bHZ-nH-7o0"/>
@@ -222,11 +225,11 @@
                                                             <constraint firstAttribute="height" constant="52" id="2Ad-0Y-0ch"/>
                                                             <constraint firstAttribute="width" constant="157" id="2ng-t2-hs2"/>
                                                         </constraints>
-                                                        <color key="pageIndicatorTintColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="pageIndicatorTintColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </pageControl>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7SJ-n0-muK">
-                                                        <rect key="frame" x="0.0" y="53" width="157" height="125.5"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" translatesAutoresizingMaskIntoConstraints="NO" id="7SJ-n0-muK">
+                                                        <rect key="frame" x="0.0" y="52" width="157" height="128"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="128" id="Vh9-Cz-PYK"/>
                                                             <constraint firstAttribute="width" constant="157" id="j15-3b-xhH"/>
@@ -249,7 +252,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="75m-oA-Ud4" firstAttribute="leading" secondItem="GJt-dG-IEC" secondAttribute="leading" constant="25" id="4iY-oa-5pZ"/>
                             <constraint firstItem="t5A-Pj-y11" firstAttribute="centerY" secondItem="Gob-vA-C7b" secondAttribute="centerY" id="6Qw-LG-xXM"/>
@@ -284,7 +287,14 @@
                     <view key="view" contentMode="scaleToFill" id="YG7-Hq-Fr0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8A-bl-sts">
+                                <rect key="frame" x="50" y="130" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="TPJ-QN-8O7"/>
                     </view>
                     <navigationItem key="navigationItem" id="GOp-Wq-d6c"/>
@@ -296,24 +306,41 @@
         <!--Adding-->
         <scene sceneID="XCe-cz-iRY">
             <objects>
-                <viewController title="Adding" id="Mbx-Pc-lBf" sceneMemberID="viewController">
+                <viewController title="Adding" id="Mbx-Pc-lBf" customClass="CameraViewController" customModule="dda_tap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xtB-AF-KJZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f01-Xv-fvo">
+                                <rect key="frame" x="142" y="373" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="TAKEA_A_PICTURE"/>
+                                <connections>
+                                    <action selector="onPhotoButton:" destination="Mbx-Pc-lBf" eventType="touchUpInside" id="Iz0-bf-Llc"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IbT-PG-iyR">
+                                <rect key="frame" x="40" y="119" width="336" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mJN-cU-VbY"/>
                     </view>
                     <navigationItem key="navigationItem" id="hXC-mF-kSK"/>
+                    <connections>
+                        <outlet property="imageView" destination="IbT-PG-iyR" id="1l0-iu-CvW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cEe-3S-9vN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="717" y="151"/>
+            <point key="canvasLocation" x="714.49275362318849" y="150.66964285714286"/>
         </scene>
     </scenes>
     <resources>
-        <image name="gear" catalog="system" width="32" height="32"/>
-        <image name="photo.fill" catalog="system" width="64" height="46"/>
-        <image name="text.justify" catalog="system" width="64" height="50"/>
+        <image name="gear" width="32" height="32"/>
+        <image name="photo.fill" width="64" height="46"/>
+        <image name="text.justify" width="64" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="rXg-es-Ga5"/>
