@@ -25,6 +25,9 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var img: UIImage = UIImage(named: "TakePictureImage")!
+        imageView = UIImageView(image: img)
+        
 
         // Do any additional setup after loading the view.
     }
