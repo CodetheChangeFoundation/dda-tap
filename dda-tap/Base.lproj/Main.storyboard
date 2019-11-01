@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IjG-hV-AdO">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -26,7 +27,7 @@
         <!--Home-->
         <scene sceneID="Wqn-01-r66">
             <objects>
-                <viewController title="Home" id="Zl2-qp-AXh" sceneMemberID="viewController">
+                <viewController title="Home" id="Zl2-qp-AXh" customClass="Home" customModule="dda_tap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gob-vA-C7b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,7 +70,7 @@
                                                         <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </pageControl>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="C9L-4v-E9F">
-                                                        <rect key="frame" x="0.0" y="53" width="157" height="125.5"/>
+                                                        <rect key="frame" x="0.0" y="53.5" width="157" height="125.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="128" id="czH-9U-pbe"/>
                                                             <constraint firstAttribute="width" constant="157" id="tVE-0K-KTf"/>
@@ -269,6 +270,12 @@
                     <navigationItem key="navigationItem" id="gZD-9O-SG4"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="tap1" destination="C9L-4v-E9F" id="Kxw-ZV-0GT"/>
+                        <outlet property="tap2" destination="oQM-4q-Nqn" id="ykO-PA-uEm"/>
+                        <outlet property="tap3" destination="VAe-dp-klN" id="HUh-NF-6ye"/>
+                        <outlet property="tap4" destination="Cyv-IP-gsZ" id="HvY-4K-0Cz"/>
+                        <outlet property="tap5" destination="RBH-By-bqS" id="paJ-tv-xwy"/>
+                        <outlet property="tap6" destination="7SJ-n0-muK" id="1Qd-Mj-fLM"/>
                         <segue destination="Mbx-Pc-lBf" kind="show" id="rXg-es-Ga5"/>
                         <segue destination="CAw-dy-dv1" kind="show" id="taa-9c-Ivk"/>
                     </connections>
@@ -311,12 +318,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gear" catalog="system" width="32" height="32"/>
+        <image name="gear" catalog="system" width="64" height="58"/>
         <image name="photo.fill" catalog="system" width="64" height="46"/>
         <image name="text.justify" catalog="system" width="64" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rXg-es-Ga5"/>
-        <segue reference="Qdt-5k-xBd"/>
+        <segue reference="bV8-gb-T0K"/>
+        <segue reference="taa-9c-Ivk"/>
     </inferredMetricsTieBreakers>
 </document>

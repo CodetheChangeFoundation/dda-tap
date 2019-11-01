@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD0BB987236C13000014AEA3 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0BB986236C13000014AEA3 /* Home.swift */; };
 		BD894C002364E12E006FEB79 /* TAPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD894BFE2364E10F006FEB79 /* TAPKit.framework */; };
 		BD894C012364E12E006FEB79 /* TAPKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD894BFE2364E10F006FEB79 /* TAPKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E44E94B12364D7C700E784B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44E94B02364D7C700E784B2 /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BD0BB986236C13000014AEA3 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		BD894BFE2364E10F006FEB79 /* TAPKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TAPKit.framework; sourceTree = "<group>"; };
 		E44E94AD2364D7C700E784B2 /* dda-tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dda-tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44E94B02364D7C700E784B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				E44E94B02364D7C700E784B2 /* AppDelegate.swift */,
 				E44E94B22364D7C700E784B2 /* ViewController.swift */,
+				BD0BB986236C13000014AEA3 /* Home.swift */,
 				E44E94B42364D7C700E784B2 /* Main.storyboard */,
 				E44E94B72364D7C700E784B2 /* Assets.xcassets */,
 				E44E94B92364D7C700E784B2 /* LaunchScreen.storyboard */,
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E44E94B32364D7C700E784B2 /* ViewController.swift in Sources */,
+				BD0BB987236C13000014AEA3 /* Home.swift in Sources */,
 				E44E94B12364D7C700E784B2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
