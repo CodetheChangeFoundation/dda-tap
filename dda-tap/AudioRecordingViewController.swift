@@ -12,11 +12,13 @@ import AVFoundation
 class AudioRecordingViewController: UIViewController, AVAudioRecorderDelegate  {
     
     var stackView: UIStackView!
-    var recordButton: UIButton!
+    //var recordButton: UIButton!
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
     var aLabel: UILabel!
-
+    
+    @IBOutlet weak var recordButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         aLabel = UILabel()
@@ -55,10 +57,10 @@ class AudioRecordingViewController: UIViewController, AVAudioRecorderDelegate  {
         audioRecorder = nil
         
         if success {
-            recordButton.setTitle("Tap to Re-record", for: .normal)
+            //recordButton.setTitle("Tap to Re-record", for: .normal)
             navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(nextTapped))
         } else {
-            recordButton.setTitle("Tap to Record", for: .normal)
+            //recordButton.setTitle("Tap to Record", for: .normal)
             
             let ac = UIAlertController(title: "Record failed", message: "There was a problem recording your whistle; please try again.", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "OK", style: .default))
@@ -80,12 +82,12 @@ class AudioRecordingViewController: UIViewController, AVAudioRecorderDelegate  {
     }
     
     func loadRecordingUI() {
-        recordButton = UIButton()
+        //recordButton = UIButton()
         recordButton.translatesAutoresizingMaskIntoConstraints = false
-        recordButton.setTitle("Tap to Record", for: .normal)
-        recordButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .title1)
+        //recordButton.setTitle("Tap to Record", for: .normal)
+        //recordButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .title1)
         recordButton.addTarget(self, action: #selector(recordTapped), for: .touchUpInside)
-        stackView.addArrangedSubview(recordButton)
+        //stackView.addArrangedSubview(recordButton)
     }
     
     func startRecording() {
@@ -111,7 +113,10 @@ class AudioRecordingViewController: UIViewController, AVAudioRecorderDelegate  {
             // 5
             audioRecorder = try AVAudioRecorder(url: audioURL, settings: settings)
             audioRecorder.delegate = self
-            audioRecorder.record()
+            audioRecorder.record(forDuration: 60) // ensures only records for 1 min max.
+            if (!audioRecorder.isRecording) {
+                finishRecording(success: true)
+            }
         } catch {
             finishRecording(success: false)
         }

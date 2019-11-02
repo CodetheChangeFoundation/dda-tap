@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     }
     
     // new object AudioRecordingController added to view controller stack
+    // probably don't need this
     @objc func addAudio() {
         let vc = AudioRecordingViewController()
         navigationController?.pushViewController(vc, animated: true)

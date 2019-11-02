@@ -251,12 +251,12 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vem-xc-3XV">
-                                <rect key="frame" x="168" y="83" width="38" height="39"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nyg-qe-w3Y">
+                                <rect key="frame" x="167" y="89" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="audio"/>
+                                <state key="normal" title="Audio"/>
                                 <connections>
-                                    <segue destination="1r1-6c-3Sa" kind="show" id="MbI-Sr-G9b"/>
+                                    <segue destination="1r1-6c-3Sa" kind="show" id="fX9-F4-s85"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -323,25 +323,23 @@
         <!--Audio Recording-->
         <scene sceneID="1ZI-4Y-3SX">
             <objects>
-                <viewController title="Audio Recording" id="1r1-6c-3Sa" sceneMemberID="viewController">
+                <viewController title="Audio Recording" id="1r1-6c-3Sa" customClass="AudioRecordingViewController" customModule="dda_tap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m3i-3q-FGD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5T-Cm-QGs" customClass="AudioRecordingViewController" customModule="dda_tap" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5T-Cm-QGs">
                                 <rect key="frame" x="43" y="510" width="87" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Screen Shot 2019-10-26 at 2.58.28 PM"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHv-oS-djP">
-                                <rect key="frame" x="43" y="334" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="zXU-Ah-FhY"/>
                     </view>
+                    <connections>
+                        <outlet property="recordButton" destination="R5T-Cm-QGs" id="TfR-Og-iN7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sKr-on-Nk6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
