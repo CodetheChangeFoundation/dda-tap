@@ -13,6 +13,8 @@
 		E44E94B82364D7C700E784B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44E94B72364D7C700E784B2 /* Assets.xcassets */; };
 		E44E94BB2364D7C700E784B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E44E94B92364D7C700E784B2 /* LaunchScreen.storyboard */; };
 		E44E94C62364D7C700E784B2 /* dda_tapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44E94C52364D7C700E784B2 /* dda_tapTests.swift */; };
+		E4F7D5D92364F6F000DB3989 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F7D5D82364F6F000DB3989 /* AVFoundation.framework */; };
+		E4F7D5DB2364FA6F00DB3989 /* AudioRecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F7D5DA2364FA6F00DB3989 /* AudioRecordingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		E44E94C12364D7C700E784B2 /* dda-tapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dda-tapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44E94C52364D7C700E784B2 /* dda_tapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dda_tapTests.swift; sourceTree = "<group>"; };
 		E44E94C72364D7C700E784B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4F7D5D82364F6F000DB3989 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E4F7D5DA2364FA6F00DB3989 /* AudioRecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4F7D5D92364F6F000DB3989 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,7 @@
 				E44E94AF2364D7C700E784B2 /* dda-tap */,
 				E44E94C42364D7C700E784B2 /* dda-tapTests */,
 				E44E94AE2364D7C700E784B2 /* Products */,
+				E4F7D5D72364F6F000DB3989 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +85,7 @@
 			children = (
 				E44E94B02364D7C700E784B2 /* AppDelegate.swift */,
 				E44E94B22364D7C700E784B2 /* ViewController.swift */,
+				E4F7D5DA2364FA6F00DB3989 /* AudioRecordingViewController.swift */,
 				E44E94B42364D7C700E784B2 /* Main.storyboard */,
 				E44E94B72364D7C700E784B2 /* Assets.xcassets */,
 				E44E94B92364D7C700E784B2 /* LaunchScreen.storyboard */,
@@ -94,6 +101,14 @@
 				E44E94C72364D7C700E784B2 /* Info.plist */,
 			);
 			path = "dda-tapTests";
+			sourceTree = "<group>";
+		};
+		E4F7D5D72364F6F000DB3989 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4F7D5D82364F6F000DB3989 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +216,7 @@
 			files = (
 				E44E94B32364D7C700E784B2 /* ViewController.swift in Sources */,
 				E44E94B12364D7C700E784B2 /* AppDelegate.swift in Sources */,
+				E4F7D5DB2364FA6F00DB3989 /* AudioRecordingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,9 +370,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LAU747KL4X;
 				INFOPLIST_FILE = "dda-tap/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.dda-tap";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.dda-tap123";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -368,9 +385,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LAU747KL4X;
 				INFOPLIST_FILE = "dda-tap/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.dda-tap";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.dda-tap123";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
