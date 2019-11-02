@@ -23,6 +23,12 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
         present(imagePickerController, animated: true, completion: nil)
     }
     
+    
+    
+    
+    
+    
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         imagePickerController.dismiss(animated: true, completion: nil)
         imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
