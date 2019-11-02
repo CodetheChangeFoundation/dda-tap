@@ -311,13 +311,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TakePictureImage" highlightedImage="TakePictureImage" translatesAutoresizingMaskIntoConstraints="NO" id="IbT-PG-iyR">
-                                <rect key="frame" x="39" y="88" width="336" height="336"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IbT-PG-iyR">
+                                <rect key="frame" x="79" y="88" width="268" height="268"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f01-Xv-fvo">
-                                <rect key="frame" x="39" y="88" width="336" height="336"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f01-Xv-fvo">
+                                <rect key="frame" x="79" y="88" width="268" height="30"/>
                                 <state key="normal" title="TAKE_A_PICTURE">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -327,6 +325,15 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IbT-PG-iyR" firstAttribute="top" secondItem="f01-Xv-fvo" secondAttribute="top" id="G8y-cy-nvf"/>
+                            <constraint firstItem="mJN-cU-VbY" firstAttribute="bottom" secondItem="IbT-PG-iyR" secondAttribute="bottom" constant="457" id="Trf-Q1-lQ7"/>
+                            <constraint firstItem="IbT-PG-iyR" firstAttribute="trailing" secondItem="f01-Xv-fvo" secondAttribute="trailing" id="Uyr-Wf-AFt"/>
+                            <constraint firstItem="IbT-PG-iyR" firstAttribute="top" secondItem="mJN-cU-VbY" secondAttribute="top" id="Z5B-fr-Ujt"/>
+                            <constraint firstItem="IbT-PG-iyR" firstAttribute="leading" secondItem="mJN-cU-VbY" secondAttribute="leading" constant="79" id="ob6-Og-fpG"/>
+                            <constraint firstItem="mJN-cU-VbY" firstAttribute="trailing" secondItem="IbT-PG-iyR" secondAttribute="trailing" constant="67" id="sRH-25-Ack"/>
+                            <constraint firstItem="IbT-PG-iyR" firstAttribute="leading" secondItem="f01-Xv-fvo" secondAttribute="leading" id="tbT-Tj-2BN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mJN-cU-VbY"/>
                     </view>
                     <navigationItem key="navigationItem" id="hXC-mF-kSK"/>
@@ -340,7 +347,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="TakePictureImage" width="1280" height="1280"/>
         <image name="gear" width="32" height="32"/>
         <image name="photo.fill" width="64" height="46"/>
         <image name="text.justify" width="64" height="50"/>

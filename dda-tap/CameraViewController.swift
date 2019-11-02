@@ -13,7 +13,7 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
     var imagePickerController : UIImagePickerController!
     
     
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet var imageView: UIImageView!
 
     
     @IBAction func onPhotoButton(_ sender: Any) {
@@ -25,8 +25,8 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var img: UIImage = UIImage(named: "TakePictureImage")!
-        imageView = UIImageView(image: img)
+//        let img: UIImage = UIImage(named: "TakePictureImage")!
+        imageView.image = UIImage(named: "TakePictureImage")
         
 
         // Do any additional setup after loading the view.
