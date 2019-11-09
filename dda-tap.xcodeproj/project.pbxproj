@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		822EC1BE23775E8C0049107E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822EC1BD23775E8C0049107E /* Main.storyboard */; };
 		824BE4BE236BF1B0003AD8C1 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824BE4BD236BF1B0003AD8C1 /* InstructionsViewController.swift */; };
 		824BE4C0236BF20E003AD8C1 /* TAPGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824BE4BF236BF20E003AD8C1 /* TAPGuideViewController.swift */; };
 		82765123236696B500EB39E7 /* menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82765122236696B500EB39E7 /* menu.swift */; };
 		8276512523669FB900EB39E7 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8276512423669FB900EB39E7 /* MenuTableViewCell.swift */; };
+		828AF4B823775FED00EA789D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 828AF4B623775FED00EA789D /* Main.storyboard */; };
 		BD894C002364E12E006FEB79 /* TAPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD894BFE2364E10F006FEB79 /* TAPKit.framework */; };
 		BD894C012364E12E006FEB79 /* TAPKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD894BFE2364E10F006FEB79 /* TAPKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E44E94B12364D7C700E784B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44E94B02364D7C700E784B2 /* AppDelegate.swift */; };
@@ -45,11 +45,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		822EC1BD23775E8C0049107E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		824BE4BD236BF1B0003AD8C1 /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		824BE4BF236BF20E003AD8C1 /* TAPGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAPGuideViewController.swift; sourceTree = "<group>"; };
 		82765122236696B500EB39E7 /* menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = menu.swift; path = ../menu.swift; sourceTree = "<group>"; };
 		8276512423669FB900EB39E7 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		828AF4B723775FED00EA789D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD894BFE2364E10F006FEB79 /* TAPKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TAPKit.framework; sourceTree = "<group>"; };
 		E44E94AD2364D7C700E784B2 /* dda-tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dda-tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44E94B02364D7C700E784B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,8 +102,8 @@
 		E44E94AF2364D7C700E784B2 /* dda-tap */ = {
 			isa = PBXGroup;
 			children = (
-				822EC1BD23775E8C0049107E /* Main.storyboard */,
 				82765122236696B500EB39E7 /* menu.swift */,
+				828AF4B623775FED00EA789D /* Main.storyboard */,
 				8276512423669FB900EB39E7 /* MenuTableViewCell.swift */,
 				E44E94B02364D7C700E784B2 /* AppDelegate.swift */,
 				824BE4BF236BF20E003AD8C1 /* TAPGuideViewController.swift */,
@@ -210,7 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				822EC1BE23775E8C0049107E /* Main.storyboard in Resources */,
+				828AF4B823775FED00EA789D /* Main.storyboard in Resources */,
 				E44E94BB2364D7C700E784B2 /* LaunchScreen.storyboard in Resources */,
 				E44E94B82364D7C700E784B2 /* Assets.xcassets in Resources */,
 			);
@@ -257,6 +257,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		828AF4B623775FED00EA789D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				828AF4B723775FED00EA789D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		E44E94B92364D7C700E784B2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
