@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DF34F56237764BA00D69866 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF34F55237764B900D69866 /* CameraViewController.swift */; };
 		824BE4BE236BF1B0003AD8C1 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824BE4BD236BF1B0003AD8C1 /* InstructionsViewController.swift */; };
 		824BE4C0236BF20E003AD8C1 /* TAPGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824BE4BF236BF20E003AD8C1 /* TAPGuideViewController.swift */; };
 		82765123236696B500EB39E7 /* menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82765122236696B500EB39E7 /* menu.swift */; };
 		8276512523669FB900EB39E7 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8276512423669FB900EB39E7 /* MenuTableViewCell.swift */; };
 		828AF4B823775FED00EA789D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 828AF4B623775FED00EA789D /* Main.storyboard */; };
-		BD894C002364E12E006FEB79 /* TAPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD894BFE2364E10F006FEB79 /* TAPKit.framework */; };
-		BD894C012364E12E006FEB79 /* TAPKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD894BFE2364E10F006FEB79 /* TAPKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E44E94B12364D7C700E784B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44E94B02364D7C700E784B2 /* AppDelegate.swift */; };
 		E44E94B82364D7C700E784B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44E94B72364D7C700E784B2 /* Assets.xcassets */; };
 		E44E94BB2364D7C700E784B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E44E94B92364D7C700E784B2 /* LaunchScreen.storyboard */; };
@@ -37,7 +36,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BD894C012364E12E006FEB79 /* TAPKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,12 +43,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5DF34F55237764B900D69866 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		824BE4BD236BF1B0003AD8C1 /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		824BE4BF236BF20E003AD8C1 /* TAPGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAPGuideViewController.swift; sourceTree = "<group>"; };
 		82765122236696B500EB39E7 /* menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = menu.swift; path = ../menu.swift; sourceTree = "<group>"; };
 		8276512423669FB900EB39E7 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		828AF4B723775FED00EA789D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BD894BFE2364E10F006FEB79 /* TAPKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TAPKit.framework; sourceTree = "<group>"; };
 		E44E94AD2364D7C700E784B2 /* dda-tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dda-tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44E94B02364D7C700E784B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E44E94B72364D7C700E784B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD894C002364E12E006FEB79 /* TAPKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +80,6 @@
 		E44E94A42364D7C600E784B2 = {
 			isa = PBXGroup;
 			children = (
-				BD894BFE2364E10F006FEB79 /* TAPKit.framework */,
 				E44E94AF2364D7C700E784B2 /* dda-tap */,
 				E44E94C42364D7C700E784B2 /* dda-tapTests */,
 				E44E94AE2364D7C700E784B2 /* Products */,
@@ -104,6 +100,7 @@
 			children = (
 				82765122236696B500EB39E7 /* menu.swift */,
 				828AF4B623775FED00EA789D /* Main.storyboard */,
+				5DF34F55237764B900D69866 /* CameraViewController.swift */,
 				8276512423669FB900EB39E7 /* MenuTableViewCell.swift */,
 				E44E94B02364D7C700E784B2 /* AppDelegate.swift */,
 				824BE4BF236BF20E003AD8C1 /* TAPGuideViewController.swift */,
@@ -111,7 +108,6 @@
 				E44E94B72364D7C700E784B2 /* Assets.xcassets */,
 				E44E94B92364D7C700E784B2 /* LaunchScreen.storyboard */,
 				E44E94BC2364D7C700E784B2 /* Info.plist */,
-				5DF259EE236613B400C31D1C /* CameraViewController.swift */,
 			);
 			path = "dda-tap";
 			sourceTree = "<group>";
@@ -236,6 +232,7 @@
 				824BE4BE236BF1B0003AD8C1 /* InstructionsViewController.swift in Sources */,
 				8276512523669FB900EB39E7 /* MenuTableViewCell.swift in Sources */,
 				824BE4C0236BF20E003AD8C1 /* TAPGuideViewController.swift in Sources */,
+				5DF34F56237764BA00D69866 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

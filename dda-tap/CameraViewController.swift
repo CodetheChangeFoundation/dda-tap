@@ -13,21 +13,15 @@ class CameraViewController: UIViewController, UINavigationControllerDelegate, UI
     var imagePickerController : UIImagePickerController!
     
     
-    @IBOutlet var imageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
+//    @IBOutlet var imageView: UIImageView!
 
-    
     @IBAction func onPhotoButton(_ sender: Any) {
         imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
         imagePickerController.sourceType = .camera
         present(imagePickerController, animated: true, completion: nil)
     }
-    
-    
-    
-    
-    
-    
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         imagePickerController.dismiss(animated: true, completion: nil)
