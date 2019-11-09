@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IjG-hV-AdO">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <navigationController id="IjG-hV-AdO" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zwd-mw-L8d">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -31,21 +31,21 @@
             <objects>
                 <viewController title="Home" id="Zl2-qp-AXh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gob-vA-C7b">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="250" translatesAutoresizingMaskIntoConstraints="NO" id="75m-oA-Ud4">
-                                <rect key="frame" x="25" y="808" width="364" height="63"/>
+                                <rect key="frame" x="25" y="784" width="270" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjl-O6-WcB">
-                                        <rect key="frame" x="0.0" y="0.0" width="57" height="63"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="10" height="50"/>
                                         <state key="normal" title="Button" image="text.justify"/>
                                         <connections>
                                             <segue destination="Mbx-Pc-lBf" kind="show" id="bV8-gb-T0K"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6e-EK-DFB">
-                                        <rect key="frame" x="307" y="0.0" width="57" height="63"/>
+                                        <rect key="frame" x="260" y="0.0" width="10" height="50"/>
                                         <state key="normal" title="Button" image="gear"/>
                                         <connections>
                                             <segue destination="CAw-dy-dv1" kind="show" id="Qdt-5k-xBd"/>
@@ -54,16 +54,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="t5A-Pj-y11">
-                                <rect key="frame" x="25" y="178" width="364" height="540"/>
+                                <rect key="frame" x="25" y="154" width="270" height="540"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="D05-TU-WHR">
-                                        <rect key="frame" x="0.0" y="0.0" width="364" height="180"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="180"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YQb-Z1-hzy">
-                                                <rect key="frame" x="0.0" y="0.0" width="157" height="180"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="180"/>
                                                 <subviews>
                                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="66L-4S-UHR">
-                                                        <rect key="frame" x="0.0" y="0.0" width="157" height="52"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="52"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="52" id="EqU-Oc-HTu"/>
                                                             <constraint firstAttribute="width" constant="157" id="ZOy-pL-dHV"/>
@@ -72,7 +72,7 @@
                                                         <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </pageControl>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" translatesAutoresizingMaskIntoConstraints="NO" id="C9L-4v-E9F">
-                                                        <rect key="frame" x="0.0" y="52" width="157" height="128"/>
+                                                        <rect key="frame" x="0.0" y="52" width="110" height="128"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="128" id="czH-9U-pbe"/>
                                                             <constraint firstAttribute="width" constant="157" id="tVE-0K-KTf"/>
@@ -91,10 +91,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MJC-BT-yum">
-                                                <rect key="frame" x="207" y="0.0" width="157" height="180"/>
+                                                <rect key="frame" x="160" y="0.0" width="110" height="180"/>
                                                 <subviews>
                                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ehg-Ev-sHv">
-                                                        <rect key="frame" x="0.0" y="0.0" width="157" height="52"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="52"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="52" id="H59-cM-A44"/>
                                                             <constraint firstAttribute="width" constant="157" id="njR-0D-BXY"/>
@@ -103,7 +103,7 @@
                                                         <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </pageControl>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" translatesAutoresizingMaskIntoConstraints="NO" id="oQM-4q-Nqn">
-                                                        <rect key="frame" x="0.0" y="52" width="157" height="128"/>
+                                                        <rect key="frame" x="0.0" y="52" width="110" height="128"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="128" id="E9L-2e-lOL"/>
                                                             <constraint firstAttribute="width" constant="157" id="JcO-8j-eQM"/>
@@ -124,13 +124,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="WvH-fh-4HB">
-                                        <rect key="frame" x="0.0" y="180" width="364" height="180"/>
+                                        <rect key="frame" x="0.0" y="180" width="270" height="180"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="F58-QR-S5j">
-                                                <rect key="frame" x="0.0" y="0.0" width="157" height="180"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="180"/>
                                                 <subviews>
                                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="TIQ-do-sMO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="157" height="52"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="52"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="157" id="Mxt-t6-vhi"/>
                                                             <constraint firstAttribute="height" constant="52" id="ooz-zu-gLc"/>
@@ -139,7 +139,7 @@
                                                         <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </pageControl>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" translatesAutoresizingMaskIntoConstraints="NO" id="VAe-dp-klN">
-                                                        <rect key="frame" x="0.0" y="52" width="157" height="128"/>
+                                                        <rect key="frame" x="0.0" y="52" width="110" height="128"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="128" id="Yz2-ow-O9I"/>
                                                             <constraint firstAttribute="width" constant="157" id="d7z-ye-VT7"/>
@@ -158,10 +158,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zrf-ev-m6i">
-                                                <rect key="frame" x="207" y="0.0" width="157" height="180"/>
+                                                <rect key="frame" x="160" y="0.0" width="110" height="180"/>
                                                 <subviews>
                                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="3" translatesAutoresizingMaskIntoConstraints="NO" id="8p2-7X-BHU">
-                                                        <rect key="frame" x="0.0" y="0.0" width="157" height="52"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="52"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="157" id="AWT-01-SqP"/>
                                                             <constraint firstAttribute="height" constant="52" id="TBZ-fj-7z3"/>
@@ -170,7 +170,7 @@
                                                         <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </pageControl>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" translatesAutoresizingMaskIntoConstraints="NO" id="Cyv-IP-gsZ">
-                                                        <rect key="frame" x="0.0" y="52" width="157" height="128"/>
+                                                        <rect key="frame" x="0.0" y="52" width="110" height="128"/>
                                                     </imageView>
                                                 </subviews>
                                                 <constraints>
@@ -183,13 +183,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="lor-Po-RN3">
-                                        <rect key="frame" x="0.0" y="360" width="364" height="180"/>
+                                        <rect key="frame" x="0.0" y="360" width="270" height="180"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xld-97-hcS">
-                                                <rect key="frame" x="0.0" y="0.0" width="157" height="180"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="180"/>
                                                 <subviews>
                                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="4" translatesAutoresizingMaskIntoConstraints="NO" id="vsv-Vv-jkr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="157" height="52"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="52"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="52" id="BU3-4a-bbQ"/>
                                                             <constraint firstAttribute="width" constant="157" id="NXb-5N-5WG"/>
@@ -198,7 +198,7 @@
                                                         <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </pageControl>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" translatesAutoresizingMaskIntoConstraints="NO" id="RBH-By-bqS">
-                                                        <rect key="frame" x="0.0" y="52" width="157" height="128"/>
+                                                        <rect key="frame" x="0.0" y="52" width="110" height="128"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="157" id="Px3-LQ-2oY"/>
                                                             <constraint firstAttribute="height" constant="128" id="bHZ-nH-7o0"/>
@@ -217,10 +217,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XHf-5Z-Hr9">
-                                                <rect key="frame" x="207" y="0.0" width="157" height="180"/>
+                                                <rect key="frame" x="160" y="0.0" width="110" height="180"/>
                                                 <subviews>
                                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="azP-3Q-i1d">
-                                                        <rect key="frame" x="0.0" y="0.0" width="157" height="52"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="52"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="52" id="2Ad-0Y-0ch"/>
                                                             <constraint firstAttribute="width" constant="157" id="2ng-t2-hs2"/>
@@ -229,7 +229,7 @@
                                                         <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </pageControl>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" translatesAutoresizingMaskIntoConstraints="NO" id="7SJ-n0-muK">
-                                                        <rect key="frame" x="0.0" y="52" width="157" height="128"/>
+                                                        <rect key="frame" x="0.0" y="52" width="110" height="128"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="128" id="Vh9-Cz-PYK"/>
                                                             <constraint firstAttribute="width" constant="157" id="j15-3b-xhH"/>
@@ -285,7 +285,7 @@
             <objects>
                 <viewController title="Setting" id="CAw-dy-dv1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YG7-Hq-Fr0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8A-bl-sts">
@@ -308,14 +308,14 @@
             <objects>
                 <viewController title="Adding" id="Mbx-Pc-lBf" customClass="CameraViewController" customModule="dda_tap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xtB-AF-KJZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IbT-PG-iyR">
-                                <rect key="frame" x="79" y="88" width="268" height="268"/>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IbT-PG-iyR">
+                                <rect key="frame" x="72" y="64" width="174" height="175"/>
                             </imageView>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f01-Xv-fvo">
-                                <rect key="frame" x="79" y="88" width="268" height="30"/>
+                                <rect key="frame" x="72" y="64" width="174" height="175"/>
                                 <state key="normal" title="TAKE_A_PICTURE">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -326,13 +326,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="IbT-PG-iyR" firstAttribute="top" secondItem="f01-Xv-fvo" secondAttribute="top" id="G8y-cy-nvf"/>
-                            <constraint firstItem="mJN-cU-VbY" firstAttribute="bottom" secondItem="IbT-PG-iyR" secondAttribute="bottom" constant="457" id="Trf-Q1-lQ7"/>
-                            <constraint firstItem="IbT-PG-iyR" firstAttribute="trailing" secondItem="f01-Xv-fvo" secondAttribute="trailing" id="Uyr-Wf-AFt"/>
-                            <constraint firstItem="IbT-PG-iyR" firstAttribute="top" secondItem="mJN-cU-VbY" secondAttribute="top" id="Z5B-fr-Ujt"/>
-                            <constraint firstItem="IbT-PG-iyR" firstAttribute="leading" secondItem="mJN-cU-VbY" secondAttribute="leading" constant="79" id="ob6-Og-fpG"/>
-                            <constraint firstItem="mJN-cU-VbY" firstAttribute="trailing" secondItem="IbT-PG-iyR" secondAttribute="trailing" constant="67" id="sRH-25-Ack"/>
-                            <constraint firstItem="IbT-PG-iyR" firstAttribute="leading" secondItem="f01-Xv-fvo" secondAttribute="leading" id="tbT-Tj-2BN"/>
+                            <constraint firstItem="f01-Xv-fvo" firstAttribute="trailing" secondItem="IbT-PG-iyR" secondAttribute="trailing" id="2nf-Jy-L5W"/>
+                            <constraint firstItem="IbT-PG-iyR" firstAttribute="top" secondItem="mJN-cU-VbY" secondAttribute="top" id="7g0-Qh-t2Z"/>
+                            <constraint firstItem="mJN-cU-VbY" firstAttribute="trailing" secondItem="IbT-PG-iyR" secondAttribute="trailing" constant="74" id="Koo-QM-2ZE"/>
+                            <constraint firstItem="f01-Xv-fvo" firstAttribute="bottom" secondItem="IbT-PG-iyR" secondAttribute="bottom" id="QIZ-GX-NLG"/>
+                            <constraint firstItem="f01-Xv-fvo" firstAttribute="top" secondItem="IbT-PG-iyR" secondAttribute="top" id="YfI-8n-00f"/>
+                            <constraint firstItem="f01-Xv-fvo" firstAttribute="leading" secondItem="IbT-PG-iyR" secondAttribute="leading" id="hwc-PU-xLZ"/>
+                            <constraint firstItem="mJN-cU-VbY" firstAttribute="bottom" secondItem="f01-Xv-fvo" secondAttribute="bottom" constant="280" id="orc-qg-KMt"/>
+                            <constraint firstItem="IbT-PG-iyR" firstAttribute="leading" secondItem="mJN-cU-VbY" secondAttribute="leading" constant="72" id="sZo-sf-dO4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mJN-cU-VbY"/>
                     </view>
@@ -343,7 +344,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cEe-3S-9vN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="714.49275362318849" y="150.66964285714286"/>
+            <point key="canvasLocation" x="714.375" y="150"/>
         </scene>
     </scenes>
     <resources>
