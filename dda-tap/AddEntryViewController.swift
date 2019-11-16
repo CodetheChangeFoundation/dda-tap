@@ -14,7 +14,6 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
     
     
     @IBOutlet weak var selectedImageView: UIImageView!
-//    @IBOutlet var imageView: UIImageView!
 
     @IBAction func onPhotoButton(_ sender: Any) {
         imagePickerController = UIImagePickerController()
