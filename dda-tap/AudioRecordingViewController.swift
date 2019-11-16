@@ -85,14 +85,14 @@ class AudioRecordingViewController: UIViewController, AVAudioRecorderDelegate, A
             audioRecorder.delegate = self
             audioRecorder.record(forDuration: 60) // ensures only records for 1 min max.
 //            if (!audioRecorder.isRecording) {
-//                audioRecorderDidFinishRecording(AVAudioRecorder, successfully: true)
+//                view.backgroundColor = UIColor(red: 0.6, green: 0, blue: 0, alpha: 1)
 //            }
         } catch {
             finishRecording(success: false)
         }
-        //        if (!audioRecorder.isRecording) {
-        //            finishRecording(success: true)
-        //        }
+                if (!audioRecorder.isRecording) {
+                    finishRecording(success: true)
+                }
         
         //finishRecording(success: true)
     }
