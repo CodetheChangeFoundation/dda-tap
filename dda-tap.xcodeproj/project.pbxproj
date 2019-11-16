@@ -116,6 +116,7 @@
 				826A209C2380A365002D9081 /* MenuTable.storyboard */,
 				82765122236696B500EB39E7 /* menu.swift */,
 				828AF4B623775FED00EA789D /* Main.storyboard */,
+				BD8070672380AFC100C4E9B2 /* TAPGuide.storyboard */,
 				8276512423669FB900EB39E7 /* MenuTableViewCell.swift */,
 				E44E94B02364D7C700E784B2 /* AppDelegate.swift */,
 				824BE4BF236BF20E003AD8C1 /* TAPGuideViewController.swift */,
@@ -227,6 +228,7 @@
 				826A209D2380A365002D9081 /* MenuTable.storyboard in Resources */,
 				826A20A72380A5EC002D9081 /* Settings.storyboard in Resources */,
 				828AF4B823775FED00EA789D /* Main.storyboard in Resources */,
+				BD8070692380AFC100C4E9B2 /* TAPGuide.storyboard in Resources */,
 				E44E94BB2364D7C700E784B2 /* LaunchScreen.storyboard in Resources */,
 				E44E94B82364D7C700E784B2 /* Assets.xcassets in Resources */,
 				826A20A22380A565002D9081 /* Instructions.storyboard in Resources */,
@@ -297,6 +299,14 @@
 				828AF4B723775FED00EA789D /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD8070672380AFC100C4E9B2 /* TAPGuide.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD8070682380AFC100C4E9B2 /* Base */,
+			);
+			name = TAPGuide.storyboard;
 			sourceTree = "<group>";
 		};
 		E44E94B92364D7C700E784B2 /* LaunchScreen.storyboard */ = {
