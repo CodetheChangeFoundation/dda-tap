@@ -9,13 +9,15 @@
 import UIKit
 import AVFoundation
 
-class AudioRecordingViewController: UIViewController, AVAudioRecorderDelegate  {
+class AudioRecordingViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate  {
     
     var stackView: UIStackView!
     //var recordButton: UIButton!
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
+    var audioPlayer : AVAudioPlayer?
     var aLabel: UILabel!
+    @IBOutlet weak var playButton: UIButton! // play button
     
     @IBOutlet weak var recordButton: UIButton!
     
@@ -28,7 +30,16 @@ class AudioRecordingViewController: UIViewController, AVAudioRecorderDelegate  {
         aLabel.center = CGPoint(x: 100, y: 40)
         view.addSubview(aLabel)
         
+        // initial background is green: when recording, turns red
+        view.backgroundColor = UIColor(red: 0, green: 0.6, blue: 0, alpha: 1)
+        
         recordingSession = AVAudioSession.sharedInstance()
+        // https://stackoverflow.com/questions/27423243/swift-avaudioplayer-wont-play-audio-recorded-with-avaudiorecorder
+        do{
+            try recordingSession.setCategory(AVAudioSessionCategoryPlayback)
+        }catch{
+            
+        }
         
         // requests user's  permission to record audio
         do {
@@ -37,7 +48,7 @@ class AudioRecordingViewController: UIViewController, AVAudioRecorderDelegate  {
             recordingSession.requestRecordPermission() { [unowned self] allowed in
                 DispatchQueue.main.async {
                     if allowed {
-                        self.loadRecordingUI()
+                        
                     } else {
                         self.loadFailUI()
                     }
@@ -49,52 +60,11 @@ class AudioRecordingViewController: UIViewController, AVAudioRecorderDelegate  {
         
     }
     
-    // destroys audioRecorder object and if successful, allows re-recordings
-    func finishRecording(success: Bool) {
-        view.backgroundColor = UIColor(red: 0, green: 0.6, blue: 0, alpha: 1)
-        
-        audioRecorder.stop()
-        audioRecorder = nil
-        
-        if success {
-            //recordButton.setTitle("Tap to Re-record", for: .normal)
-            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(nextTapped))
-        } else {
-            //recordButton.setTitle("Tap to Record", for: .normal)
-            
-            let ac = UIAlertController(title: "Record failed", message: "There was a problem recording your whistle; please try again.", preferredStyle: .alert)
-            ac.addAction(UIAlertAction(title: "OK", style: .default))
-            present(ac, animated: true)
-        }
-    }
-    
-    // depending on current state, will allow recordings
-    @objc func nextTapped() {
-    
-    }
-    
-    @objc func recordTapped() {
-        if audioRecorder == nil {
-            startRecording()
-        } else {
-            finishRecording(success: true)
-        }
-    }
-    
-    func loadRecordingUI() {
-        //recordButton = UIButton()
-        recordButton.translatesAutoresizingMaskIntoConstraints = false
-        //recordButton.setTitle("Tap to Record", for: .normal)
-        //recordButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .title1)
-        recordButton.addTarget(self, action: #selector(recordTapped), for: .touchUpInside)
-        //stackView.addArrangedSubview(recordButton)
-    }
-    
     func startRecording() {
         // may change, right now just ensuring background changes color to show user audio is being recorded
         view.backgroundColor = UIColor(red: 0.6, green: 0, blue: 0, alpha: 1)
         
-        // mak a record button
+        // make a record button
         recordButton.setTitle("Tap to Stop", for: .normal)
         
         // 3
@@ -114,13 +84,85 @@ class AudioRecordingViewController: UIViewController, AVAudioRecorderDelegate  {
             audioRecorder = try AVAudioRecorder(url: audioURL, settings: settings)
             audioRecorder.delegate = self
             audioRecorder.record(forDuration: 60) // ensures only records for 1 min max.
-            if (!audioRecorder.isRecording) {
-                finishRecording(success: true)
-            }
+//            if (!audioRecorder.isRecording) {
+//                audioRecorderDidFinishRecording(AVAudioRecorder, successfully: true)
+//            }
         } catch {
             finishRecording(success: false)
         }
+        //        if (!audioRecorder.isRecording) {
+        //            finishRecording(success: true)
+        //        }
+        
+        //finishRecording(success: true)
     }
+    
+    // destroys audioRecorder object and if successful, allows re-recordings
+    func finishRecording(success: Bool) {
+        view.backgroundColor = UIColor(red: 0, green: 0.6, blue: 0, alpha: 1)
+        
+        audioRecorder.stop()
+        audioRecorder = nil
+        
+        if success {
+            //recordButton.setTitle("Tap to Re-record", for: .normal)
+            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(nextTapped))
+        } else {
+            //recordButton.setTitle("Tap to Record", for: .normal)
+            
+            let ac = UIAlertController(title: "Record failed", message: "There was a problem recording; please try again.", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+        }
+    }
+
+    
+    // depending on current state, will allow recordings
+    @objc func nextTapped() {
+
+    }
+    
+    @IBAction func recordAudio(_ sender: UIButton) {
+        recordTapped()
+    }
+    
+    @objc func recordTapped() {
+        if audioRecorder == nil {
+            startRecording()
+        } else {
+            finishRecording(success: true)
+        }
+    }
+    
+//    @objc func playTapped() {
+//
+//            startPlaying()
+//
+//    }
+    
+    //commented out
+    func loadRecordingUI() {
+        //recordButton = UIButton()
+        recordButton.translatesAutoresizingMaskIntoConstraints = false
+        //recordButton.setTitle("Tap to Record", for: .normal)
+        //recordButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .title1)
+        recordAudio(recordButton)
+        //recordButton.addTarget(self, action: #selector(recordTapped), for: .touchUpInside)
+        //playButton.addTarget(self, action: #selector(playTapped), for: .touchUpInside)
+        //stackView.addArrangedSubview(recordButton)
+    }
+    
+    //added
+//    func startPlaying() {
+//        //var error: NSError?
+//
+//        var audioURL = AudioRecordingViewController.getAudioURL()
+//        let player = try? AVAudioPlayer(contentsOf: audioURL)
+//        player?.prepareToPlay()
+//        player?.play()
+//
+//    }
+
     
     // if audio recording fails
     func loadFailUI() {
@@ -153,6 +195,34 @@ class AudioRecordingViewController: UIViewController, AVAudioRecorderDelegate  {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // play recording
+    @IBAction func playButton(_ sender: UIButton) {
+//        if audioRecorder?.isRecording == false{
+            recordButton.isEnabled = false
+            
+            //var error : NSError?
+            
+            audioPlayer?.prepareToPlay()
+            audioPlayer = try? AVAudioPlayer(contentsOf: AudioRecordingViewController.getAudioURL())
+            audioPlayer?.delegate = self
+            audioPlayer?.volume = 5.0
+            audioPlayer?.play()
+            recordButton.isEnabled = true;
+            playButton.isEnabled = true;
+//            if let err = error{
+//            } else{
+//                print("good")
+//                audioPlayer?.play()
+//
+//            }
+//        }
+    }
+    
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        recordButton.isEnabled = true
+        playButton.isEnabled = true
     }
     
 
