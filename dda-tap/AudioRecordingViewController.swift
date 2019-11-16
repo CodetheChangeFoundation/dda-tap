@@ -31,12 +31,12 @@ class AudioRecordingViewController: UIViewController, AVAudioRecorderDelegate, A
         view.addSubview(aLabel)
         
         // initial background is green: when recording, turns red
-        view.backgroundColor = UIColor(red: 0, green: 0.6, blue: 0, alpha: 1)
+        view.backgroundColor = UIColor(red: 0.6, green: 0, blue: 0, alpha: 1)
         
         recordingSession = AVAudioSession.sharedInstance()
         // https://stackoverflow.com/questions/27423243/swift-avaudioplayer-wont-play-audio-recorded-with-avaudiorecorder
         do{
-            try recordingSession.setCategory(AVAudioSessionCategoryPlayback)
+            try recordingSession.setCategory(AVAudioSessionCategoryPlayAndRecord) // PlayandRecord
         }catch{
             
         }
@@ -62,7 +62,7 @@ class AudioRecordingViewController: UIViewController, AVAudioRecorderDelegate, A
     
     func startRecording() {
         // may change, right now just ensuring background changes color to show user audio is being recorded
-        view.backgroundColor = UIColor(red: 0.6, green: 0, blue: 0, alpha: 1)
+        view.backgroundColor = UIColor(red: 0, green: 0.6, blue: 0, alpha: 1)
         
         // make a record button
         recordButton.setTitle("Tap to Stop", for: .normal)
@@ -99,7 +99,7 @@ class AudioRecordingViewController: UIViewController, AVAudioRecorderDelegate, A
     
     // destroys audioRecorder object and if successful, allows re-recordings
     func finishRecording(success: Bool) {
-        view.backgroundColor = UIColor(red: 0, green: 0.6, blue: 0, alpha: 1)
+        view.backgroundColor = UIColor(red: 0.6, green: 0, blue: 0, alpha: 1)
         
         audioRecorder.stop()
         audioRecorder = nil
