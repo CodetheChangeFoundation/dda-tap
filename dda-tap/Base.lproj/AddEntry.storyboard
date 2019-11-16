@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1r1-6c-3Sa">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Audio Recording-->
+        <scene sceneID="1ZI-4Y-3SX">
+            <objects>
+                <viewController title="Audio Recording" id="1r1-6c-3Sa" customClass="AudioRecordingViewController" customModule="dda_tap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m3i-3q-FGD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5T-Cm-QGs">
+                                <rect key="frame" x="116" y="208" width="143" height="210"/>
+                                <state key="normal" image="Screen Shot 2019-10-26 at 2.58.28 PM"/>
+                                <connections>
+                                    <action selector="recordAudio:" destination="1r1-6c-3Sa" eventType="touchUpInside" id="zHS-BV-j1Q"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Press and Hold to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xm8-8p-H5C">
+                                <rect key="frame" x="90" y="435" width="195" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGQ-GD-zmW">
+                                <rect key="frame" x="169" y="170" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="PLAY"/>
+                                <connections>
+                                    <action selector="playButton:" destination="1r1-6c-3Sa" eventType="touchUpInside" id="bve-HD-gKn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zXU-Ah-FhY" firstAttribute="bottom" secondItem="R5T-Cm-QGs" secondAttribute="bottom" constant="204" id="2kt-Lp-3Hp"/>
+                            <constraint firstItem="Xm8-8p-H5C" firstAttribute="leading" secondItem="zXU-Ah-FhY" secondAttribute="leading" constant="136" id="3zX-Ro-FcU"/>
+                            <constraint firstItem="R5T-Cm-QGs" firstAttribute="top" secondItem="zXU-Ah-FhY" secondAttribute="top" constant="188" id="4Zr-tA-wka"/>
+                            <constraint firstItem="R5T-Cm-QGs" firstAttribute="leading" secondItem="zXU-Ah-FhY" secondAttribute="leading" constant="116" id="BQ7-Vw-hbS"/>
+                            <constraint firstItem="zXU-Ah-FhY" firstAttribute="trailing" secondItem="R5T-Cm-QGs" secondAttribute="trailing" constant="116" id="JOJ-Qr-xrq"/>
+                            <constraint firstItem="zXU-Ah-FhY" firstAttribute="bottom" secondItem="Xm8-8p-H5C" secondAttribute="bottom" constant="160" id="dJ4-13-Bgp"/>
+                            <constraint firstItem="Xm8-8p-H5C" firstAttribute="top" secondItem="R5T-Cm-QGs" secondAttribute="bottom" constant="23.5" id="w51-RF-Ctr"/>
+                            <constraint firstItem="zXU-Ah-FhY" firstAttribute="trailing" secondItem="Xm8-8p-H5C" secondAttribute="trailing" constant="136" id="yg0-XF-zMf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zXU-Ah-FhY"/>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="VGQ-GD-zmW" id="Hmq-MZ-sjh"/>
+                        <outlet property="recordButton" destination="R5T-Cm-QGs" id="TfR-Og-iN7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sKr-on-Nk6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="733.60000000000002" y="861.3193403298352"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Screen Shot 2019-10-26 at 2.58.28 PM" width="431" height="544"/>
+    </resources>
+</document>

@@ -13,6 +13,7 @@
 		E44E94B82364D7C700E784B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44E94B72364D7C700E784B2 /* Assets.xcassets */; };
 		E44E94BB2364D7C700E784B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E44E94B92364D7C700E784B2 /* LaunchScreen.storyboard */; };
 		E44E94C62364D7C700E784B2 /* dda_tapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44E94C52364D7C700E784B2 /* dda_tapTests.swift */; };
+		E4D23DDF2380A47D00B230EA /* AddEntry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D23DDD2380A47C00B230EA /* AddEntry.storyboard */; };
 		E4F7D5D92364F6F000DB3989 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F7D5D82364F6F000DB3989 /* AVFoundation.framework */; };
 		E4F7D5DB2364FA6F00DB3989 /* AudioRecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F7D5DA2364FA6F00DB3989 /* AudioRecordingViewController.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		E44E94C12364D7C700E784B2 /* dda-tapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dda-tapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44E94C52364D7C700E784B2 /* dda_tapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dda_tapTests.swift; sourceTree = "<group>"; };
 		E44E94C72364D7C700E784B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4D23DDE2380A47C00B230EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "dda-tap/Base.lproj/AddEntry.storyboard"; sourceTree = "<group>"; };
 		E4F7D5D82364F6F000DB3989 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E4F7D5DA2364FA6F00DB3989 /* AudioRecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +66,7 @@
 		E44E94A42364D7C600E784B2 = {
 			isa = PBXGroup;
 			children = (
+				E4D23DDD2380A47C00B230EA /* AddEntry.storyboard */,
 				E44E94AF2364D7C700E784B2 /* dda-tap */,
 				E44E94C42364D7C700E784B2 /* dda-tapTests */,
 				E44E94AE2364D7C700E784B2 /* Products */,
@@ -195,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E44E94BB2364D7C700E784B2 /* LaunchScreen.storyboard in Resources */,
+				E4D23DDF2380A47D00B230EA /* AddEntry.storyboard in Resources */,
 				E44E94B82364D7C700E784B2 /* Assets.xcassets in Resources */,
 				E44E94B62364D7C700E784B2 /* Main.storyboard in Resources */,
 			);
@@ -253,6 +257,14 @@
 				E44E94BA2364D7C700E784B2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E4D23DDD2380A47C00B230EA /* AddEntry.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4D23DDE2380A47C00B230EA /* Base */,
+			);
+			name = AddEntry.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
