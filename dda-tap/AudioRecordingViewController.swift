@@ -57,7 +57,9 @@ class AudioRecordingViewController: UIViewController, AVAudioRecorderDelegate, A
         } catch {
             self.loadFailUI()
         }
-        
+//        if (!audioRecorder.isRecording) {
+//            finishRecording(success: true)
+//        }
     }
     
     func startRecording() {
@@ -90,9 +92,9 @@ class AudioRecordingViewController: UIViewController, AVAudioRecorderDelegate, A
         } catch {
             finishRecording(success: false)
         }
-                if (!audioRecorder.isRecording) {
-                    finishRecording(success: true)
-                }
+//                if (!audioRecorder.isRecording) {
+//                    finishRecording(success: true)
+//                }
         
         //finishRecording(success: true)
     }
