@@ -1373,7 +1373,7 @@
         <!--menu-->
         <scene sceneID="I8d-PK-WYX">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="menu" storyboardName="AddEntry" referencedIdentifier="menu" id="6p6-LR-1D7" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="menu" storyboardName="MenuTable" referencedIdentifier="menu" id="6p6-LR-1D7" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Fcu-hQ-gab"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Na-Dl-eZH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
