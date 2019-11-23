@@ -16,6 +16,11 @@
 		CA0EBF162380B6A7004C0DAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0EBF142380B6A7004C0DAF /* Main.storyboard */; };
 		CA0EBF182380B6F6004C0DAF /* imagePageViewController copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EBF172380B6F6004C0DAF /* imagePageViewController copy.swift */; };
 		CA0EBF1C2380B78E004C0DAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA0EBF1B2380B78E004C0DAF /* Assets.xcassets */; };
+		CAC943412389D06800A589C2 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC9433F2389D06800A589C2 /* Settings.storyboard */; };
+		CAC943432389D09200A589C2 /* MenuTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC943422389D09200A589C2 /* MenuTable.storyboard */; };
+		CAC943462389D12300A589C2 /* Instructions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC943442389D12300A589C2 /* Instructions.storyboard */; };
+		CAC943482389D13500A589C2 /* TAPGuide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC943472389D13500A589C2 /* TAPGuide.storyboard */; };
+		CAC9434B2389D1CF00A589C2 /* AddEntry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC943492389D1CF00A589C2 /* AddEntry.storyboard */; };
 		E44E94B12364D7C700E784B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44E94B02364D7C700E784B2 /* AppDelegate.swift */; };
 		E44E94BB2364D7C700E784B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E44E94B92364D7C700E784B2 /* LaunchScreen.storyboard */; };
 		E44E94C62364D7C700E784B2 /* dda_tapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44E94C52364D7C700E784B2 /* dda_tapTests.swift */; };
@@ -54,6 +59,11 @@
 		CA0EBF152380B6A7004C0DAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA0EBF172380B6F6004C0DAF /* imagePageViewController copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "imagePageViewController copy.swift"; sourceTree = "<group>"; };
 		CA0EBF1B2380B78E004C0DAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAC943402389D06800A589C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "dda-tap/Base.lproj/Settings.storyboard"; sourceTree = "<group>"; };
+		CAC943422389D09200A589C2 /* MenuTable.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuTable.storyboard; sourceTree = "<group>"; };
+		CAC943452389D12300A589C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "dda-tap/Base.lproj/Instructions.storyboard"; sourceTree = "<group>"; };
+		CAC943472389D13500A589C2 /* TAPGuide.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TAPGuide.storyboard; sourceTree = "<group>"; };
+		CAC9434A2389D1CF00A589C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "dda-tap/Base.lproj/AddEntry.storyboard"; sourceTree = "<group>"; };
 		E44E94AD2364D7C700E784B2 /* dda-tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dda-tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44E94B02364D7C700E784B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E44E94BA2364D7C700E784B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,6 +114,11 @@
 		E44E94AF2364D7C700E784B2 /* dda-tap */ = {
 			isa = PBXGroup;
 			children = (
+				CAC943492389D1CF00A589C2 /* AddEntry.storyboard */,
+				CAC943472389D13500A589C2 /* TAPGuide.storyboard */,
+				CAC943442389D12300A589C2 /* Instructions.storyboard */,
+				CAC943422389D09200A589C2 /* MenuTable.storyboard */,
+				CAC9433F2389D06800A589C2 /* Settings.storyboard */,
 				CA0EBF1B2380B78E004C0DAF /* Assets.xcassets */,
 				CA0EBF172380B6F6004C0DAF /* imagePageViewController copy.swift */,
 				CA0EBF142380B6A7004C0DAF /* Main.storyboard */,
@@ -213,9 +228,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC943432389D09200A589C2 /* MenuTable.storyboard in Resources */,
+				CAC943482389D13500A589C2 /* TAPGuide.storyboard in Resources */,
+				CAC943462389D12300A589C2 /* Instructions.storyboard in Resources */,
 				CA0EBF162380B6A7004C0DAF /* Main.storyboard in Resources */,
 				CA0EBF1C2380B78E004C0DAF /* Assets.xcassets in Resources */,
+				CAC9434B2389D1CF00A589C2 /* AddEntry.storyboard in Resources */,
 				E44E94BB2364D7C700E784B2 /* LaunchScreen.storyboard in Resources */,
+				CAC943412389D06800A589C2 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +287,30 @@
 				CA0EBF152380B6A7004C0DAF /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAC9433F2389D06800A589C2 /* Settings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAC943402389D06800A589C2 /* Base */,
+			);
+			name = Settings.storyboard;
+			sourceTree = "<group>";
+		};
+		CAC943442389D12300A589C2 /* Instructions.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAC943452389D12300A589C2 /* Base */,
+			);
+			name = Instructions.storyboard;
+			sourceTree = "<group>";
+		};
+		CAC943492389D1CF00A589C2 /* AddEntry.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAC9434A2389D1CF00A589C2 /* Base */,
+			);
+			name = AddEntry.storyboard;
 			sourceTree = "<group>";
 		};
 		E44E94B92364D7C700E784B2 /* LaunchScreen.storyboard */ = {
