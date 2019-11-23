@@ -19,31 +19,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="yGl-Ai-22E">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="yGl-Ai-22E">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ofJ-3H-sC5">
-                                        <rect key="frame" x="0.0" y="0.0" width="363" height="292"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ofJ-3H-sC5">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="108"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="VolumeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XwK-He-tzT">
-                                                <rect key="frame" x="0.0" y="109" width="181.5" height="74"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VolumeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XwK-He-tzT">
+                                                <rect key="frame" x="0.0" y="17" width="187.5" height="74"/>
                                             </imageView>
-                                            <slider opaque="NO" contentMode="center" verticalCompressionResistancePriority="250" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8Iv-5P-fXv">
-                                                <rect key="frame" x="179.5" y="131" width="185.5" height="31"/>
+                                            <slider opaque="NO" contentMode="center" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8Iv-5P-fXv">
+                                                <rect key="frame" x="185.5" y="39" width="191.5" height="31"/>
                                             </slider>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fT9-tn-TjJ">
-                                        <rect key="frame" x="0.0" y="292" width="375" height="71"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fT9-tn-TjJ">
+                                        <rect key="frame" x="0.0" y="108" width="375" height="107.5"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Screen 2" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v7n-M7-D2w">
-                                                <rect key="frame" x="0.0" y="20.5" width="183.5" height="30"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Screen 2" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v7n-M7-D2w">
+                                                <rect key="frame" x="0.0" y="39" width="183.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <view contentMode="center" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QYP-BW-gx6">
-                                                <rect key="frame" x="191.5" y="0.0" width="183.5" height="71"/>
+                                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="QYP-BW-gx6">
+                                                <rect key="frame" x="191.5" y="18.5" width="183.5" height="71"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5FJ-ZE-wDi">
                                                         <rect key="frame" x="67" y="20" width="51" height="31"/>
@@ -54,17 +54,17 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="baP-d5-5CN">
-                                        <rect key="frame" x="0.0" y="363" width="375" height="71"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="baP-d5-5CN">
+                                        <rect key="frame" x="0.0" y="215.5" width="375" height="108"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Screen 3" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SRL-2g-45s">
-                                                <rect key="frame" x="0.0" y="20.5" width="183.5" height="30"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Screen 3" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SRL-2g-45s">
+                                                <rect key="frame" x="0.0" y="39" width="183.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <view contentMode="center" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dOv-i6-08f">
-                                                <rect key="frame" x="191.5" y="0.0" width="183.5" height="71"/>
+                                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="dOv-i6-08f">
+                                                <rect key="frame" x="191.5" y="18.5" width="183.5" height="71"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4VR-t3-jkn">
                                                         <rect key="frame" x="67" y="20" width="51" height="31"/>
@@ -75,17 +75,17 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Fbj-R4-vId">
-                                        <rect key="frame" x="0.0" y="434" width="375" height="71"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Fbj-R4-vId">
+                                        <rect key="frame" x="0.0" y="323.5" width="375" height="108"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Screen 4" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mj0-DG-SfT">
-                                                <rect key="frame" x="0.0" y="20.5" width="183.5" height="30"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Screen 4" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mj0-DG-SfT">
+                                                <rect key="frame" x="0.0" y="39" width="183.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <view contentMode="center" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AUb-Ec-193">
-                                                <rect key="frame" x="191.5" y="0.0" width="183.5" height="71"/>
+                                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="AUb-Ec-193">
+                                                <rect key="frame" x="191.5" y="18.5" width="183.5" height="71"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8fG-bM-Q6x">
                                                         <rect key="frame" x="67" y="20" width="51" height="31"/>
@@ -96,17 +96,17 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZYQ-Va-uWR">
-                                        <rect key="frame" x="0.0" y="505" width="375" height="71"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZYQ-Va-uWR">
+                                        <rect key="frame" x="0.0" y="431.5" width="375" height="107.5"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Screen 5" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gbu-MD-8sI">
-                                                <rect key="frame" x="0.0" y="20.5" width="183.5" height="30"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Screen 5" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gbu-MD-8sI">
+                                                <rect key="frame" x="0.0" y="39" width="183.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <view contentMode="center" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XMH-r4-GLZ">
-                                                <rect key="frame" x="191.5" y="0.0" width="183.5" height="71"/>
+                                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="XMH-r4-GLZ">
+                                                <rect key="frame" x="191.5" y="18.5" width="183.5" height="71"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QQs-gV-nDk">
                                                         <rect key="frame" x="67" y="20" width="51" height="31"/>
@@ -117,17 +117,17 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Oge-VC-jQN">
-                                        <rect key="frame" x="0.0" y="576" width="375" height="71"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Oge-VC-jQN">
+                                        <rect key="frame" x="0.0" y="539" width="375" height="108"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Screen 6" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yGY-2e-xMb">
-                                                <rect key="frame" x="0.0" y="20.5" width="183.5" height="30"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Screen 6" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yGY-2e-xMb">
+                                                <rect key="frame" x="0.0" y="39" width="183.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <view contentMode="center" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M5i-P8-OnQ">
-                                                <rect key="frame" x="191.5" y="0.0" width="183.5" height="71"/>
+                                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="M5i-P8-OnQ">
+                                                <rect key="frame" x="191.5" y="18.5" width="183.5" height="71"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sWH-UO-qFA">
                                                         <rect key="frame" x="67" y="20" width="51" height="31"/>
