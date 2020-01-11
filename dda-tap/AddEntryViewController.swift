@@ -52,7 +52,7 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
     }
     
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    func cameraImagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         cameraImagePickerController.dismiss(animated: true, completion: nil)
         selectedImageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
     }
