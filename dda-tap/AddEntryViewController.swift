@@ -11,12 +11,13 @@ import UIKit
 class AddEntryViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     var cameraImagePickerController : UIImagePickerController!
-    var cameraRollPickerController : UIImagePickerController!
-    
+    var source : String!
+    var selectedImage : UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         selectedImageView.image = UIImage(named: "TakePictureImage")
+        cameraImagePickerController = UIImagePickerController()
     }
     
     
@@ -24,7 +25,7 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
 
     
     @IBAction func onPhotoButton(_ sender: Any) {
-        cameraImagePickerController = UIImagePickerController()
+        source = "camera"
         cameraImagePickerController.delegate = self
         cameraImagePickerController.sourceType = .camera
         present(cameraImagePickerController, animated: true, completion: nil)
@@ -33,40 +34,38 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
     
     @IBAction func selectCameraRollButton(_ sender: Any) {
         
-        cameraRollPickerController = UIImagePickerController()
-        
         if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
-            cameraRollPickerController.delegate = self
-            cameraRollPickerController.sourceType = .savedPhotosAlbum
-            cameraRollPickerController.allowsEditing = false
+            source = "gallery"
+            cameraImagePickerController.delegate = self
+            cameraImagePickerController.sourceType = .savedPhotosAlbum
+            cameraImagePickerController.allowsEditing = false
             
-            present(cameraRollPickerController, animated: true, completion: nil)
+            present(cameraImagePickerController, animated: true, completion: nil)
         }
     }
     
     
-    func cameraRollPickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!){
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         self.dismiss(animated: true, completion: { () -> Void in
-        })
-        selectedImageView.image = image
-    }
-    
-    
-    func cameraImagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        cameraImagePickerController.dismiss(animated: true, completion: nil)
-        selectedImageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+                    })
+        selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage
+        selectedImageView.image = selectedImage
     }
     
     
     func saveImage(imageName: String){
         let fileManager = FileManager.default
-        //get the image path
+        // get image path
         let imagePath = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(imageName)
-        //get the image we took with camera
-        let image = selectedImageView.image!
-        let data = UIImagePNGRepresentation(image)
-        //store it in the document directory
-        fileManager.createFile(atPath: imagePath as String, contents: data, attributes: nil)
+        // obtain image taken with camera
+        let img = selectedImageView.image!
+        let data = UIImagePNGRepresentation(img)
+        // store file in document directory
+//        fileManager.createFile(atPath: imagePath as String, contents: data, attributes: nil)
+        
+        
+        
     }
     
     
