@@ -13,6 +13,7 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
     var cameraImagePickerController : UIImagePickerController!
     var source : String!
     var selectedImage : UIImage!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +45,13 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
         }
     }
     
+    @IBAction func onSaveEntryButton(_ sender: Any) {
+        if (selectedImage == nil) {
+            let alert = UIAlertController(title: "No image selected", message: "You need to select an image before you can save!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+    }
     
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
