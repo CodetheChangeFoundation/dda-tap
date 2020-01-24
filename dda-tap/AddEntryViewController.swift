@@ -17,11 +17,14 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
     var audioRecorder: AVAudioRecorder!
     var audioPlayer : AVAudioPlayer?
     var aLabel: UILabel!
+    //@IBOutlet weak var recordButton: UIButton!
+    //@IBOutlet weak var recordButton: UIButton!
+    //@IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        //super.viewDidLoad()
         //        let img: UIImage = UIImage(named: "TakePictureImage")
         view.backgroundColor = UIColor(red: 0.6, green: 0, blue: 0, alpha: 1)
         

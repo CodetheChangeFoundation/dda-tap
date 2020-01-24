@@ -33,13 +33,22 @@
                                     <action selector="onPhotoButton:" destination="r0p-QC-M8W" eventType="touchUpInside" id="0rv-m5-em8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Option 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Jf-g3-wmI">
-                                <rect key="frame" x="155" y="435" width="64" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1e-Ah-LUP">
+                                <rect key="frame" x="141" y="334" width="103" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" image="VolumeIcon"/>
+                                <connections>
+                                    <action selector="recordAudio:" destination="r0p-QC-M8W" eventType="touchUpInside" id="wQv-W2-UyT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0K-5z-vD7">
+                                <rect key="frame" x="174" y="440" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="PLAY"/>
+                                <connections>
+                                    <action selector="playButton:" destination="r0p-QC-M8W" eventType="touchUpInside" id="agc-Ef-SzB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -55,6 +64,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="C90-xj-9Z4"/>
                     <connections>
+                        <outlet property="playButton" destination="X0K-5z-vD7" id="m0a-5b-19p"/>
+                        <outlet property="recordButton" destination="G1e-Ah-LUP" id="ws8-Ek-2PU"/>
                         <outlet property="selectedImageView" destination="1ap-UO-zYv" id="3Fb-cR-X2W"/>
                     </connections>
                 </viewController>
@@ -63,4 +74,7 @@
             <point key="canvasLocation" x="82.400000000000006" y="1204.9475262368817"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="VolumeIcon" width="103" height="74"/>
+    </resources>
 </document>
