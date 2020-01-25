@@ -89,7 +89,7 @@ extension mainPageViewController:UIPageViewControllerDelegate{
                             previousViewControllers:[UIViewController],
                             transitionCompleted completed:Bool){
         if let firstViewController=viewControllers?.first,
-            let index=orderedViewControllers.firstIndex(of: firstViewController){
+            let index=orderedViewControllers.index(of: firstViewController){
             mainDelegate?.mainPageViewController(mainPageViewController: self,
                                                          didUpdatePageIndex: index)
         }
@@ -105,7 +105,7 @@ protocol mainPageViewControllerDelegate:class {
 
 extension mainPageViewController: UIPageViewControllerDataSource{
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        guard let ViewControllerIndex=orderedViewControllers.firstIndex(of: viewController) else{
+        guard let ViewControllerIndex=orderedViewControllers.index(of: viewController) else{
             return nil
         }
         
@@ -122,7 +122,7 @@ extension mainPageViewController: UIPageViewControllerDataSource{
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        guard let ViewControllerIndex=orderedViewControllers.firstIndex(of: viewController) else{
+        guard let ViewControllerIndex=orderedViewControllers.index(of: viewController) else{
             return nil
         }
         
