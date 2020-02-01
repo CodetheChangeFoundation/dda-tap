@@ -89,6 +89,15 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
         
     }
     
+    @IBAction func onSaveEntryButton(_ sender: Any) {
+        if (selectedImage == nil) {
+            let alert = UIAlertController(title: "No image selected", message: "You need to select an image before you can save!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+    }
+
+    
     // destroys audioRecorder object and if successful, allows re-recordings
     func finishRecording(success: Bool) {
         view.backgroundColor = UIColor(red: 0.6, green: 0, blue: 0, alpha: 1)

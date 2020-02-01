@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,7 @@
         <!--AddMainEntry-->
         <scene sceneID="7L2-QX-bSi">
             <objects>
-                <viewController storyboardIdentifier="UIViewController-r0p-QC-M8W" title="AddMainEntry" id="r0p-QC-M8W" customClass="AddEntryViewController" customModule="dda_tap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UIViewController-r0p-QC-M8W" title="AddMainEntry" useStoryboardIdentifierAsRestorationIdentifier="YES" id="r0p-QC-M8W" customClass="AddEntryViewController" customModule="dda_tap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3lR-3S-SMz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,6 +65,13 @@
                                     <action selector="playButton:" destination="r0p-QC-M8W" eventType="touchUpInside" id="T7O-N3-lpa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNA-8O-prg">
+                                <rect key="frame" x="151" y="583" width="73" height="30"/>
+                                <state key="normal" title="Save Entry"/>
+                                <connections>
+                                    <action selector="onSaveEntryButton:" destination="r0p-QC-M8W" eventType="touchUpInside" id="ADT-De-RcM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -77,10 +84,12 @@
                             <constraint firstItem="92q-1b-VCj" firstAttribute="trailing" secondItem="N0R-2b-9YT" secondAttribute="trailing" constant="136" id="LFg-KS-hf2"/>
                             <constraint firstItem="h85-ws-xlz" firstAttribute="top" secondItem="N0R-2b-9YT" secondAttribute="bottom" constant="51" id="Ore-WP-Kf5"/>
                             <constraint firstItem="92q-1b-VCj" firstAttribute="trailing" secondItem="7Zt-n2-mch" secondAttribute="trailing" constant="61" id="Stg-Mp-suh"/>
+                            <constraint firstItem="ZNA-8O-prg" firstAttribute="centerX" secondItem="3lR-3S-SMz" secondAttribute="centerX" id="VTU-8Z-r9U"/>
                             <constraint firstItem="1ap-UO-zYv" firstAttribute="leading" secondItem="Y74-Xp-fym" secondAttribute="leading" id="Z0d-9C-a3u"/>
                             <constraint firstItem="7Zt-n2-mch" firstAttribute="leading" secondItem="92q-1b-VCj" secondAttribute="leading" constant="70" id="dMf-yi-P3c"/>
                             <constraint firstItem="Y74-Xp-fym" firstAttribute="centerX" secondItem="7Zt-n2-mch" secondAttribute="centerX" id="e5R-Nf-dQ1"/>
                             <constraint firstItem="92q-1b-VCj" firstAttribute="trailing" secondItem="h85-ws-xlz" secondAttribute="trailing" constant="147" id="eA8-Py-xnh"/>
+                            <constraint firstItem="ZNA-8O-prg" firstAttribute="top" secondItem="h85-ws-xlz" secondAttribute="bottom" constant="20" id="if8-Gg-3NW"/>
                             <constraint firstItem="1ap-UO-zYv" firstAttribute="leading" secondItem="92q-1b-VCj" secondAttribute="leading" constant="97" id="mzP-Wa-WKA"/>
                             <constraint firstItem="92q-1b-VCj" firstAttribute="bottom" secondItem="h85-ws-xlz" secondAttribute="bottom" constant="104" id="pAC-pg-g3Y"/>
                             <constraint firstItem="7Zt-n2-mch" firstAttribute="top" secondItem="Y74-Xp-fym" secondAttribute="bottom" constant="26" id="t48-R6-RrY"/>
