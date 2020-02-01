@@ -10,10 +10,6 @@ import UIKit
 
 class InstructionsViewController: UIViewController {
     
-    
-    @IBOutlet weak var InstructionsTextView: UITextView!
-    
-    
     @IBOutlet weak var TapPatternTextView: UITextView!
     
     @IBOutlet weak var TextCodeInstruction: UITextView!

@@ -155,8 +155,7 @@ Tap will interact with current active screen.</string>
                     </view>
                     <navigationItem key="navigationItem" id="tPU-2U-QIi"/>
                     <connections>
-                        <outlet property="InstructionsTextView" destination="jjm-bI-ogZ" id="ysX-aA-Xaw"/>
-                        <outlet property="TapPatternTextView" destination="eD1-SI-BkV" id="X8U-xl-PzH"/>
+                        <outlet property="TapPatternTextView" destination="eD1-SI-BkV" id="7FO-kG-HX8"/>
                         <outlet property="TextCodeInstruction" destination="slx-bi-YXU" id="7Db-ca-LBZ"/>
                     </connections>
                 </viewController>
