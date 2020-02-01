@@ -45,5 +45,7 @@
 	<string>For adding photo/audio entries!</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>For adding photo/audio entries!</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>For saving microphone entries!</string>
 </dict>
 </plist>

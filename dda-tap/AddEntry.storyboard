@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,9 +29,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="3SQ-aK-skg"/>
                                 </constraints>
-                                <state key="normal" title="Take Photo"/>
+                                <state key="normal" title="Take Photo">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="onPhotoButton:" destination="r0p-QC-M8W" eventType="touchUpInside" id="0rv-m5-em8"/>
+                                    <action selector="onSaveEntryButton:" destination="r0p-QC-M8W" eventType="touchUpInside" id="0HR-8p-1Cp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zt-n2-mch">
@@ -40,45 +42,56 @@
                                     <constraint firstAttribute="height" constant="53" id="FDi-BZ-o9j"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Choose from Camera Roll"/>
+                                <state key="normal" title="Choose from Camera Roll">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="selectCameraRollButton:" destination="r0p-QC-M8W" eventType="touchUpInside" id="mlM-2C-r3F"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Jf-g3-wmI">
-                                <rect key="frame" x="160" y="353" width="64" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gd-ii-Va1">
-                                <rect key="frame" x="151" y="545" width="73" height="30"/>
-                                <state key="normal" title="Save Entry"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0R-2b-9YT">
+                                <rect key="frame" x="146" y="408" width="93" height="74"/>
+                                <state key="normal" image="VolumeIcon"/>
                                 <connections>
-                                    <action selector="onSaveEntryButton:" destination="r0p-QC-M8W" eventType="touchUpInside" id="0HR-8p-1Cp"/>
+                                    <action selector="recordAudio:" destination="r0p-QC-M8W" eventType="touchUpInside" id="NA6-6M-7XO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h85-ws-xlz">
+                                <rect key="frame" x="156" y="533" width="72" height="30"/>
+                                <state key="normal" title="Play Audio">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton:" destination="r0p-QC-M8W" eventType="touchUpInside" id="T7O-N3-lpa"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="N0R-2b-9YT" firstAttribute="leading" secondItem="92q-1b-VCj" secondAttribute="leading" constant="146" id="2J6-iT-cT0"/>
                             <constraint firstItem="1ap-UO-zYv" firstAttribute="top" secondItem="92q-1b-VCj" secondAttribute="top" constant="28" id="2nY-42-mL7"/>
                             <constraint firstItem="1ap-UO-zYv" firstAttribute="trailing" secondItem="Y74-Xp-fym" secondAttribute="trailing" id="Aef-eO-n3i"/>
-                            <constraint firstItem="9Jf-g3-wmI" firstAttribute="trailing" secondItem="4gd-ii-Va1" secondAttribute="trailing" id="BVf-JN-JUi"/>
                             <constraint firstItem="Y74-Xp-fym" firstAttribute="top" secondItem="1ap-UO-zYv" secondAttribute="bottom" constant="22" id="Dw7-o8-gO2"/>
+                            <constraint firstItem="h85-ws-xlz" firstAttribute="top" secondItem="N0R-2b-9YT" secondAttribute="bottom" constant="51" id="Gvm-uT-aBc"/>
+                            <constraint firstItem="N0R-2b-9YT" firstAttribute="top" secondItem="7Zt-n2-mch" secondAttribute="bottom" constant="63" id="KyW-SG-pD4"/>
+                            <constraint firstItem="92q-1b-VCj" firstAttribute="trailing" secondItem="N0R-2b-9YT" secondAttribute="trailing" constant="136" id="LFg-KS-hf2"/>
+                            <constraint firstItem="h85-ws-xlz" firstAttribute="top" secondItem="N0R-2b-9YT" secondAttribute="bottom" constant="51" id="Ore-WP-Kf5"/>
                             <constraint firstItem="92q-1b-VCj" firstAttribute="trailing" secondItem="7Zt-n2-mch" secondAttribute="trailing" constant="61" id="Stg-Mp-suh"/>
-                            <constraint firstItem="92q-1b-VCj" firstAttribute="bottom" secondItem="4gd-ii-Va1" secondAttribute="bottom" constant="92" id="UL2-Gg-kRE"/>
                             <constraint firstItem="1ap-UO-zYv" firstAttribute="leading" secondItem="Y74-Xp-fym" secondAttribute="leading" id="Z0d-9C-a3u"/>
                             <constraint firstItem="7Zt-n2-mch" firstAttribute="leading" secondItem="92q-1b-VCj" secondAttribute="leading" constant="70" id="dMf-yi-P3c"/>
                             <constraint firstItem="Y74-Xp-fym" firstAttribute="centerX" secondItem="7Zt-n2-mch" secondAttribute="centerX" id="e5R-Nf-dQ1"/>
-                            <constraint firstItem="9Jf-g3-wmI" firstAttribute="centerX" secondItem="7Zt-n2-mch" secondAttribute="centerX" id="hGd-gy-Kso"/>
+                            <constraint firstItem="92q-1b-VCj" firstAttribute="trailing" secondItem="h85-ws-xlz" secondAttribute="trailing" constant="147" id="eA8-Py-xnh"/>
                             <constraint firstItem="1ap-UO-zYv" firstAttribute="leading" secondItem="92q-1b-VCj" secondAttribute="leading" constant="97" id="mzP-Wa-WKA"/>
+                            <constraint firstItem="92q-1b-VCj" firstAttribute="bottom" secondItem="h85-ws-xlz" secondAttribute="bottom" constant="104" id="pAC-pg-g3Y"/>
                             <constraint firstItem="7Zt-n2-mch" firstAttribute="top" secondItem="Y74-Xp-fym" secondAttribute="bottom" constant="26" id="t48-R6-RrY"/>
-                            <constraint firstItem="9Jf-g3-wmI" firstAttribute="top" secondItem="7Zt-n2-mch" secondAttribute="bottom" constant="8" symbolic="YES" id="xIr-XZ-uey"/>
+                            <constraint firstItem="h85-ws-xlz" firstAttribute="leading" secondItem="92q-1b-VCj" secondAttribute="leading" constant="156" id="uKO-gg-MMa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="92q-1b-VCj"/>
                     </view>
                     <navigationItem key="navigationItem" id="C90-xj-9Z4"/>
                     <connections>
+                        <outlet property="playButton" destination="h85-ws-xlz" id="BEe-0t-LlL"/>
+                        <outlet property="recordButton" destination="N0R-2b-9YT" id="gY7-jK-IbR"/>
                         <outlet property="selectedImageView" destination="1ap-UO-zYv" id="3Fb-cR-X2W"/>
                     </connections>
                 </viewController>
@@ -87,4 +100,7 @@
             <point key="canvasLocation" x="82.400000000000006" y="1204.9475262368817"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="VolumeIcon" width="103" height="74"/>
+    </resources>
 </document>
