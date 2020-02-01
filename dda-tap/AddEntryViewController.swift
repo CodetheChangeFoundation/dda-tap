@@ -278,6 +278,7 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
         let imagePath = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(imageName)
         if fileManager.fileExists(atPath: imagePath){
             image_1.image = UIImage(contentsOfFile: imagePath)
+            selectedImage=UIImage(contentsOfFile: imagePath)
         }else{
             print("ERROR: Could not find image :(")
         }
