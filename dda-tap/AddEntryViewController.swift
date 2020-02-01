@@ -11,6 +11,8 @@ import AVFoundation
 
 class AddEntryViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, AVAudioRecorderDelegate, AVAudioPlayerDelegate {
     
+    
+    
     var cameraImagePickerController : UIImagePickerController!
     var source : String!
     var selectedImage : UIImage!
@@ -111,6 +113,10 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
             let alert = UIAlertController(title: "No audio clip selected", message: "You need to select an audio clip before you can save!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true)
+        }else{
+            //TODO
+            saveImage(imageName: "image_1")
+            getImage(imageName: "image_1")
         }
         
     }
@@ -253,23 +259,25 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
     
     
     func saveImage(imageName: String){
-        let fileManager = FileManager.default
+        _ = FileManager.default
         // get image path
-        let imagePath = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(imageName)
+        _ = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(imageName)
         // obtain image taken with camera
         let img = selectedImageView.image!
-        let data = UIImagePNGRepresentation(img)
+        _ = UIImagePNGRepresentation(img)
         // store file in document directory
 //        fileManager.createFile(atPath: imagePath as String, contents: data, attributes: nil)
         
     }
     
     
+    @IBOutlet weak var image_1: UIImageView!
+    
     func getImage(imageName: String){
         let fileManager = FileManager.default
         let imagePath = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(imageName)
         if fileManager.fileExists(atPath: imagePath){
-            selectedImageView.image = UIImage(contentsOfFile: imagePath)
+            image_1.image = UIImage(contentsOfFile: imagePath)
         }else{
             print("ERROR: Could not find image :(")
         }
@@ -277,3 +285,4 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
 
 
 }
+

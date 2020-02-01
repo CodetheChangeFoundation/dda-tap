@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R0I-LE-sAU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R0I-LE-sAU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,11 +29,11 @@
             <objects>
                 <viewController id="sRh-RA-dpJ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bl3-V7-zb5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.min" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cC6-uE-z8M">
-                                <rect key="frame" x="25" y="200.5" width="364" height="347"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="image_1" image="sun.min" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cC6-uE-z8M">
+                                <rect key="frame" x="25" y="244.5" width="364" height="357"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="-2220" y="3064"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Entry View Controller-->
         <scene sceneID="b25-6d-mwW">
             <objects>
-                <viewController storyboardIdentifier="FirstViewController" id="PzI-X7-gx3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstViewController" id="PzI-X7-gx3" customClass="AddEntryViewController" customModule="dda_tap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IpE-Uv-HQi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,13 +145,9 @@
                                                             <constraint firstAttribute="height" constant="38" id="JXc-rf-LzM"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNi-mF-bEl">
-                                                        <rect key="frame" x="0.0" y="38.5" width="142" height="138.5"/>
-                                                        <state key="normal" backgroundImage="sun.min" catalog="system"/>
-                                                        <connections>
-                                                            <segue destination="sRh-RA-dpJ" kind="show" id="98m-g6-jLF"/>
-                                                        </connections>
-                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.on.square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rf3-qa-2uZ">
+                                                        <rect key="frame" x="0.0" y="35.5" width="142" height="144.5"/>
+                                                    </imageView>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wb8-iW-vhw">
@@ -352,6 +348,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mH7-eA-grE"/>
                     </view>
+                    <connections>
+                        <outlet property="image_1" destination="rf3-qa-2uZ" id="nni-yB-oeh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mdh-7c-a9v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1413,6 +1412,7 @@
         <image name="empty" width="800" height="800"/>
         <image name="gear" width="1024" height="1024"/>
         <image name="got" width="682" height="1023"/>
+        <image name="square.and.arrow.up.on.square.fill" catalog="system" width="58" height="64"/>
         <image name="stack" width="512" height="512"/>
         <image name="sun.max" catalog="system" width="64" height="62"/>
         <image name="sun.min" catalog="system" width="64" height="60"/>
