@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="portrait" layout="splitview2_3" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,25 +13,159 @@
             <objects>
                 <viewController storyboardIdentifier="UIViewController-Wj7-9u-pfJ" title="Instructions" id="Wj7-9u-pfJ" customClass="InstructionsViewController" customModule="dda_tap" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dWM-fr-vMN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <rect key="frame" x="0.0" y="0.0" width="504" height="1194"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Option 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CP8-9g-GcO">
-                                <rect key="frame" x="186" y="438" width="66" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" maximumZoomScale="0.0" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjm-bI-ogZ" userLabel="InstructionsTextView">
+                                <rect key="frame" x="92" y="25" width="320" height="92.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="LjC-HM-Gku"/>
+                                    <constraint firstAttribute="width" constant="320" id="fjU-VV-HTe"/>
+                                </constraints>
+                                <string key="text">Instructions:
+
+Tap and hold button access edit screen.
+Assign image and record audio.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LjC-HM-Gku"/>
+                                        <exclude reference="fjU-VV-HTe"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="fjU-VV-HTe"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="LjC-HM-Gku"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                </variation>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="n56-9c-tF3" userLabel="TapPatternStackView">
+                                <rect key="frame" x="92" y="122.5" width="320" height="75"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="KJo-7w-KOb">
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="37"/>
+                                        <color key="pageIndicatorTintColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </pageControl>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eD1-SI-BkV" userLabel="TapPatternText">
+                                        <rect key="frame" x="96" y="0.0" width="224" height="73.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <string key="text">Indicates tap pattern.
+Tap fingers indicated to play the associated audio.</string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        </variation>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KJo-7w-KOb" firstAttribute="top" secondItem="n56-9c-tF3" secondAttribute="top" id="3Xa-qr-AAf"/>
+                                    <constraint firstItem="eD1-SI-BkV" firstAttribute="width" secondItem="n56-9c-tF3" secondAttribute="width" multiplier="0.7" id="IvW-av-QTs"/>
+                                    <constraint firstAttribute="trailing" secondItem="eD1-SI-BkV" secondAttribute="trailing" id="UV3-df-4D5"/>
+                                    <constraint firstItem="KJo-7w-KOb" firstAttribute="width" relation="lessThanOrEqual" secondItem="n56-9c-tF3" secondAttribute="width" multiplier="0.3" id="hUQ-Sk-Mcx"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="xIZ-OV-otD"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6b-a0-O6Q">
+                                <rect key="frame" x="92" y="197.5" width="320" height="50"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" scrollEnabled="NO" editable="NO" text="Text code is available here." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slx-bi-YXU" userLabel="TextCodeInstruction">
+                                        <rect key="frame" x="96" y="7.5" width="224" height="35.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        </variation>
+                                    </textView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lmj-1v-bKJ" userLabel="LightbulbView">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="50"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="lightbulb" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="iKW-ix-Hl2">
+                                                <rect key="frame" x="23" y="-1.5" width="50" height="51.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="iKW-ix-Hl2" secondAttribute="height" multiplier="1:1" id="rtr-JB-jqQ"/>
+                                                </constraints>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="16"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="iKW-ix-Hl2" firstAttribute="centerX" secondItem="Lmj-1v-bKJ" secondAttribute="centerX" id="Kec-pH-IlN"/>
+                                            <constraint firstItem="iKW-ix-Hl2" firstAttribute="centerY" secondItem="Lmj-1v-bKJ" secondAttribute="centerY" id="ga8-Oh-8ZB"/>
+                                            <constraint firstItem="iKW-ix-Hl2" firstAttribute="height" secondItem="Lmj-1v-bKJ" secondAttribute="height" id="hAL-fS-x2g"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Lmj-1v-bKJ" secondAttribute="bottom" id="2jt-bf-D4T"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Aaq-Wy-lXN"/>
+                                    <constraint firstItem="slx-bi-YXU" firstAttribute="centerY" secondItem="r6b-a0-O6Q" secondAttribute="centerY" id="LXy-ln-dye"/>
+                                    <constraint firstAttribute="trailing" secondItem="slx-bi-YXU" secondAttribute="trailing" id="N1R-PC-5I1"/>
+                                    <constraint firstItem="slx-bi-YXU" firstAttribute="leading" secondItem="Lmj-1v-bKJ" secondAttribute="trailing" id="Pp5-Tb-JrB"/>
+                                    <constraint firstItem="Lmj-1v-bKJ" firstAttribute="leading" secondItem="r6b-a0-O6Q" secondAttribute="leading" id="eLD-r6-hJu"/>
+                                    <constraint firstItem="Lmj-1v-bKJ" firstAttribute="top" secondItem="r6b-a0-O6Q" secondAttribute="top" id="vQ6-c6-XWy"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zxQ-ze-FLw" userLabel="BottomTextView">
+                                <rect key="frame" x="92" y="247.5" width="320" height="92.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Tapping each button directly on screen will also play recording audio.
+
+Tap will interact with current active screen.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                </variation>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="n56-9c-tF3" firstAttribute="top" secondItem="jjm-bI-ogZ" secondAttribute="bottom" constant="5" id="3WM-JI-z3i"/>
+                            <constraint firstItem="n56-9c-tF3" firstAttribute="width" secondItem="jjm-bI-ogZ" secondAttribute="width" id="3tX-31-V7R"/>
+                            <constraint firstItem="n56-9c-tF3" firstAttribute="centerX" secondItem="dWM-fr-vMN" secondAttribute="centerX" id="448-sO-xgN"/>
+                            <constraint firstItem="zxQ-ze-FLw" firstAttribute="centerX" secondItem="dWM-fr-vMN" secondAttribute="centerX" id="5hb-i8-V5E"/>
+                            <constraint firstItem="jjm-bI-ogZ" firstAttribute="top" secondItem="Pg7-bd-6Ec" secondAttribute="top" constant="25" id="9Ze-gu-M5g"/>
+                            <constraint firstItem="r6b-a0-O6Q" firstAttribute="width" secondItem="n56-9c-tF3" secondAttribute="width" id="Aoq-9O-47R"/>
+                            <constraint firstItem="zxQ-ze-FLw" firstAttribute="width" secondItem="jjm-bI-ogZ" secondAttribute="width" id="Kd7-rP-CbL"/>
+                            <constraint firstItem="r6b-a0-O6Q" firstAttribute="top" secondItem="n56-9c-tF3" secondAttribute="bottom" id="LEo-ND-NA5"/>
+                            <constraint firstItem="jjm-bI-ogZ" firstAttribute="centerX" secondItem="dWM-fr-vMN" secondAttribute="centerX" id="O1z-oH-Ymv"/>
+                            <constraint firstItem="slx-bi-YXU" firstAttribute="width" secondItem="eD1-SI-BkV" secondAttribute="width" id="VG5-Kd-Mso"/>
+                            <constraint firstItem="zxQ-ze-FLw" firstAttribute="top" secondItem="r6b-a0-O6Q" secondAttribute="bottom" id="gvF-Yo-2Ov"/>
+                            <constraint firstItem="r6b-a0-O6Q" firstAttribute="centerX" secondItem="dWM-fr-vMN" secondAttribute="centerX" id="ilM-Sg-dD0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Pg7-bd-6Ec"/>
                     </view>
                     <navigationItem key="navigationItem" id="tPU-2U-QIi"/>
+                    <connections>
+                        <outlet property="InstructionsTextView" destination="jjm-bI-ogZ" id="ysX-aA-Xaw"/>
+                        <outlet property="TapPatternTextView" destination="eD1-SI-BkV" id="X8U-xl-PzH"/>
+                        <outlet property="TextCodeInstruction" destination="slx-bi-YXU" id="7Db-ca-LBZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3F0-BC-cpj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="900" y="1205"/>
+            <point key="canvasLocation" x="900" y="1203.1690140845071"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lightbulb" catalog="system" width="56" height="64"/>
+    </resources>
 </document>
