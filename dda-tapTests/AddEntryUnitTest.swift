@@ -17,7 +17,6 @@ class AddEntryUnitTest: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        //let storyboard = UIStoryboard(name: "UIViewController-r0p-QC-M8W", bundle: nil)
         let storyboard = UIStoryboard(name: "AddEntry", bundle: nil)
         
         vc = storyboard.instantiateViewController(withIdentifier: "UIViewController-r0p-QC-M8W") as? dda_tap.AddEntryViewController
