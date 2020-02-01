@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DA7733A23E556A9002288DA /* AddEntryUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA7733923E556A9002288DA /* AddEntryUnitTest.swift */; };
 		5DF5DEC82380AB42002450C1 /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF5DEC72380AB42002450C1 /* AddEntryViewController.swift */; };
 		824BE4BE236BF1B0003AD8C1 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824BE4BD236BF1B0003AD8C1 /* InstructionsViewController.swift */; };
 		824BE4C0236BF20E003AD8C1 /* TAPGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824BE4BF236BF20E003AD8C1 /* TAPGuideViewController.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5DA7733923E556A9002288DA /* AddEntryUnitTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntryUnitTest.swift; sourceTree = "<group>"; };
 		5DF5DEC72380AB42002450C1 /* AddEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntryViewController.swift; sourceTree = "<group>"; };
 		824BE4BD236BF1B0003AD8C1 /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		824BE4BF236BF20E003AD8C1 /* TAPGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAPGuideViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				E44E94C52364D7C700E784B2 /* dda_tapTests.swift */,
+				5DA7733923E556A9002288DA /* AddEntryUnitTest.swift */,
 				E44E94C72364D7C700E784B2 /* Info.plist */,
 			);
 			path = "dda-tapTests";
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DA7733A23E556A9002288DA /* AddEntryUnitTest.swift in Sources */,
 				E44E94C62364D7C700E784B2 /* dda_tapTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
