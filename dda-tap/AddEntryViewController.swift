@@ -53,17 +53,13 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
                     if allowed {
                         
                     } else {
-//                        self.loadFailUI()
                         let alert = UIAlertController(title: "No microphone permission", message: "Need the microphone to record audio!", preferredStyle: .alert)
                         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                         self.present(alert, animated: true)
-                        
-                        
                     }
                 }
             }
         } catch {
-//            self.loadFailUI()
             let alert = UIAlertController(title: "No microphone permission", message: "Need the microphone to record audio!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true)
@@ -103,14 +99,7 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
     }
     
     @IBAction func onSaveEntryButton(_ sender: Any) {
-//        var temp : AVAudioPlayer?
-//        var audioClipExists = true
-//        do {
-//        temp = try AVAudioPlayer(contentsOf: AddEntryViewController.getAudioURL())
-//        } catch {
-//            audioClipExists = false
-//        }
-        
+
         if (selectedImage == nil && audioExists) {
             let alert = UIAlertController(title: "No image selected", message: "You need to select an image before you can save!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -291,6 +280,4 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
             print("ERROR: Could not find image :(")
         }
     }
-
-
 }
