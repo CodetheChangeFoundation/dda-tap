@@ -33,7 +33,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onSaveEntryButton:" destination="r0p-QC-M8W" eventType="touchUpInside" id="0HR-8p-1Cp"/>
+                                    <action selector="onPhotoButton:" destination="r0p-QC-M8W" eventType="touchUpInside" id="K5R-U2-7sg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zt-n2-mch">
