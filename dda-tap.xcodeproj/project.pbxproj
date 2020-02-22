@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		5DA7733A23E556A9002288DA /* AddEntryUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA7733923E556A9002288DA /* AddEntryUnitTest.swift */; };
 		5DF5DEC82380AB42002450C1 /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF5DEC72380AB42002450C1 /* AddEntryViewController.swift */; };
-		823FE0C723F89CE4006E88CE /* TAPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823FE0C023F89CE3006E88CE /* TAPKit.framework */; };
-		823FE0C823F89CE4006E88CE /* TAPKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 823FE0C023F89CE3006E88CE /* TAPKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8206F33C2401EDE8001BB8DF /* TAPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8206F33B2401EDE8001BB8DF /* TAPKit.framework */; };
+		8206F33E2401EE00001BB8DF /* TAPKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8206F33D2401EE00001BB8DF /* TAPKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		823FE10223F8A1E9006E88CE /* TAPDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823FE0EF23F8A1E9006E88CE /* TAPDevice.swift */; };
 		823FE10323F8A1E9006E88CE /* TAPKitDelegateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823FE0F123F8A1E9006E88CE /* TAPKitDelegateController.swift */; };
 		823FE10423F8A1E9006E88CE /* bridge-header.h in Headers */ = {isa = PBXBuildFile; fileRef = 823FE0F323F8A1E9006E88CE /* bridge-header.h */; };
@@ -65,7 +65,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				823FE0C823F89CE4006E88CE /* TAPKit.framework in Embed Frameworks */,
+				8206F33E2401EE00001BB8DF /* TAPKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +75,8 @@
 /* Begin PBXFileReference section */
 		5DA7733923E556A9002288DA /* AddEntryUnitTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntryUnitTest.swift; sourceTree = "<group>"; };
 		5DF5DEC72380AB42002450C1 /* AddEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntryViewController.swift; sourceTree = "<group>"; };
+		8206F33B2401EDE8001BB8DF /* TAPKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TAPKit.framework; path = "../../Library/Developer/Xcode/DerivedData/dda-tap-ffqqfhoazmwryjfptxjcftwcrzrc/Build/Products/Debug-iphoneos/TAPKit.framework"; sourceTree = "<group>"; };
+		8206F33D2401EE00001BB8DF /* TAPKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TAPKit.framework; sourceTree = "<group>"; };
 		823FE0C023F89CE3006E88CE /* TAPKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TAPKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		823FE0EF23F8A1E9006E88CE /* TAPDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAPDevice.swift; sourceTree = "<group>"; };
 		823FE0F123F8A1E9006E88CE /* TAPKitDelegateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAPKitDelegateController.swift; sourceTree = "<group>"; };
@@ -123,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				823FE0C723F89CE4006E88CE /* TAPKit.framework in Frameworks */,
+				8206F33C2401EDE8001BB8DF /* TAPKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +139,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8206F33A2401EDE8001BB8DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8206F33B2401EDE8001BB8DF /* TAPKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		823FE0C123F89CE3006E88CE /* TAPKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,10 +219,12 @@
 		E44E94A42364D7C600E784B2 = {
 			isa = PBXGroup;
 			children = (
+				8206F33D2401EE00001BB8DF /* TAPKit.framework */,
 				823FE0C123F89CE3006E88CE /* TAPKit */,
 				E44E94AF2364D7C700E784B2 /* dda-tap */,
 				E44E94C42364D7C700E784B2 /* dda-tapTests */,
 				E44E94AE2364D7C700E784B2 /* Products */,
+				8206F33A2401EDE8001BB8DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
