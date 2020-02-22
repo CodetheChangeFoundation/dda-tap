@@ -24,6 +24,10 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
     
+    enum AddEntryError : Error {
+        case noCameraInSimulator
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //        let img: UIImage = UIImage(named: "TakePictureImage")
@@ -49,12 +53,16 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
                     if allowed {
                         
                     } else {
-                        self.loadFailUI()
+                        let alert = UIAlertController(title: "No microphone permission", message: "Need the microphone to record audio!", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                        self.present(alert, animated: true)
                     }
                 }
             }
         } catch {
-            self.loadFailUI()
+            let alert = UIAlertController(title: "No microphone permission", message: "Need the microphone to record audio!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true)
         }
         
         audioExists = false
@@ -91,14 +99,7 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
     }
     
     @IBAction func onSaveEntryButton(_ sender: Any) {
-//        var temp : AVAudioPlayer?
-//        var audioClipExists = true
-//        do {
-//        temp = try AVAudioPlayer(contentsOf: AddEntryViewController.getAudioURL())
-//        } catch {
-//            audioClipExists = false
-//        }
-        
+
         if (selectedImage == nil && audioExists) {
             let alert = UIAlertController(title: "No image selected", message: "You need to select an image before you can save!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -222,11 +223,17 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
     @IBOutlet weak var selectedImageView: UIImageView!
 
     
-    @IBAction func onPhotoButton(_ sender: Any) {
-        source = "camera"
-        cameraImagePickerController.delegate = self
-        cameraImagePickerController.sourceType = .camera
-        present(cameraImagePickerController, animated: true, completion: nil)
+    @IBAction func onPhotoButton(_ sender: Any) throws {
+        
+        if (UIImagePickerController.isSourceTypeAvailable(.camera)) {
+            source = "camera"
+            cameraImagePickerController.delegate = self
+            cameraImagePickerController.sourceType = .camera
+            present(cameraImagePickerController, animated: true, completion: nil)
+        }
+        else {
+            throw AddEntryError.noCameraInSimulator
+        }
     }
     
     
@@ -241,7 +248,6 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
             present(cameraImagePickerController, animated: true, completion: nil)
         }
     }
-    
     
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -274,6 +280,4 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
             print("ERROR: Could not find image :(")
         }
     }
-
-
 }

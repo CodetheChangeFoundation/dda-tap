@@ -36,6 +36,48 @@ class AddEntryUnitTest: XCTestCase {
         vc.onSaveEntryButton(self)
         assert(true)
     }
+    
+    func testOnPhotoButton() {
+        // We check that a crash occurs
+        
+        do {
+            try vc.onPhotoButton(self)
+            // Test failed if no exception thrown
+            XCTFail("Did not throw exception")
+        } catch AddEntryViewController.AddEntryError.noCameraInSimulator {
+            // Test passed
+        } catch {
+            // Test failed if wrong exception thrown
+            XCTFail("Threw wrong exception")
+        }
+    }
+    
+    func testOnCameraRollButton() {
+        vc.selectCameraRollButton(self)
+    }
+    
+    func testOnSaveEntryButtonWithNoImageNoAudio() {
+        // audioExists and selectedImage are false and nil, respectively
+        vc.onSaveEntryButton(self)
+    }
+    
+    func testOnSaveEntryButtonWithNoImage() {
+        // selectedImage is nil
+        vc.audioExists = true;
+        vc.onSaveEntryButton(self)
+    }
+    
+    func testOnSaveEntryButtonWithNoAudio() {
+        // audioExists is false
+        vc.selectedImage = UIImage(named: "TakePictureImage")
+        vc.onSaveEntryButton(self)
+    }
+    
+    func testOnSaveEntryButtonWithImageAndAudio() {
+        vc.selectedImage = UIImage(named: "TakePictureImage")
+        vc.audioExists = true;
+        vc.onSaveEntryButton(self)
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
