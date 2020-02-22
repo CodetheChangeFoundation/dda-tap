@@ -53,12 +53,20 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
                     if allowed {
                         
                     } else {
-                        self.loadFailUI()
+//                        self.loadFailUI()
+                        let alert = UIAlertController(title: "No microphone permission", message: "Need the microphone to record audio!", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                        self.present(alert, animated: true)
+                        
+                        
                     }
                 }
             }
         } catch {
-            self.loadFailUI()
+//            self.loadFailUI()
+            let alert = UIAlertController(title: "No microphone permission", message: "Need the microphone to record audio!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true)
         }
         
         audioExists = false
