@@ -20,10 +20,12 @@
 		8276512523669FB900EB39E7 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8276512423669FB900EB39E7 /* MenuTableViewCell.swift */; };
 		828AF4B823775FED00EA789D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 828AF4B623775FED00EA789D /* Main.storyboard */; };
 		CA9D1E772389DD8E0029A0CF /* imagePageViewController copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9D1E762389DD8E0029A0CF /* imagePageViewController copy.swift */; };
+		E427FB8823FE3C68003031A4 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E427FB8723FE3C68003031A4 /* PopUpViewController.swift */; };
 		E44E94B12364D7C700E784B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44E94B02364D7C700E784B2 /* AppDelegate.swift */; };
 		E44E94B82364D7C700E784B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44E94B72364D7C700E784B2 /* Assets.xcassets */; };
 		E44E94BB2364D7C700E784B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E44E94B92364D7C700E784B2 /* LaunchScreen.storyboard */; };
 		E44E94C62364D7C700E784B2 /* dda_tapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44E94C52364D7C700E784B2 /* dda_tapTests.swift */; };
+		E4B5755B240214150004520D /* sampleAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4B5755A240214140004520D /* sampleAudio.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,7 @@
 		8276512423669FB900EB39E7 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		828AF4B723775FED00EA789D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA9D1E762389DD8E0029A0CF /* imagePageViewController copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "imagePageViewController copy.swift"; sourceTree = "<group>"; };
+		E427FB8723FE3C68003031A4 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		E44E94AD2364D7C700E784B2 /* dda-tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dda-tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44E94B02364D7C700E784B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E44E94B72364D7C700E784B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 		E44E94C12364D7C700E784B2 /* dda-tapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dda-tapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44E94C52364D7C700E784B2 /* dda_tapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dda_tapTests.swift; sourceTree = "<group>"; };
 		E44E94C72364D7C700E784B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4B5755A240214140004520D /* sampleAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sampleAudio.mp3; path = ../../../sampleAudio.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 				826A209C2380A365002D9081 /* MenuTable.storyboard */,
 				82765122236696B500EB39E7 /* menu.swift */,
 				828AF4B623775FED00EA789D /* Main.storyboard */,
+				E4B5755A240214140004520D /* sampleAudio.mp3 */,
+				E427FB8723FE3C68003031A4 /* PopUpViewController.swift */,
 				BD8070672380AFC100C4E9B2 /* TAPGuide.storyboard */,
 				8276512423669FB900EB39E7 /* MenuTableViewCell.swift */,
 				E44E94B02364D7C700E784B2 /* AppDelegate.swift */,
@@ -233,6 +239,7 @@
 				826A20A52380A5C6002D9081 /* TAPGuide.storyboard in Resources */,
 				826A209D2380A365002D9081 /* MenuTable.storyboard in Resources */,
 				826A20A72380A5EC002D9081 /* Settings.storyboard in Resources */,
+				E4B5755B240214150004520D /* sampleAudio.mp3 in Resources */,
 				828AF4B823775FED00EA789D /* Main.storyboard in Resources */,
 				E44E94BB2364D7C700E784B2 /* LaunchScreen.storyboard in Resources */,
 				E44E94B82364D7C700E784B2 /* Assets.xcassets in Resources */,
@@ -261,6 +268,7 @@
 				8276512523669FB900EB39E7 /* MenuTableViewCell.swift in Sources */,
 				824BE4C0236BF20E003AD8C1 /* TAPGuideViewController.swift in Sources */,
 				CA9D1E772389DD8E0029A0CF /* imagePageViewController copy.swift in Sources */,
+				E427FB8823FE3C68003031A4 /* PopUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
