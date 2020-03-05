@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D4EE8312401E2AC005DFEA2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4EE8302401E2AC005DFEA2 /* SettingsViewController.swift */; };
 		5DA7733A23E556A9002288DA /* AddEntryUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA7733923E556A9002288DA /* AddEntryUnitTest.swift */; };
 		5DF5DEC82380AB42002450C1 /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF5DEC72380AB42002450C1 /* AddEntryViewController.swift */; };
 		824BE4BE236BF1B0003AD8C1 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824BE4BD236BF1B0003AD8C1 /* InstructionsViewController.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5D4EE8302401E2AC005DFEA2 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5DA7733923E556A9002288DA /* AddEntryUnitTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntryUnitTest.swift; sourceTree = "<group>"; };
 		5DF5DEC72380AB42002450C1 /* AddEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntryViewController.swift; sourceTree = "<group>"; };
 		824BE4BD236BF1B0003AD8C1 /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				826A20A32380A5C6002D9081 /* TAPGuide.storyboard */,
 				5DF5DEC72380AB42002450C1 /* AddEntryViewController.swift */,
 				826A20A62380A5EC002D9081 /* Settings.storyboard */,
+				5D4EE8302401E2AC005DFEA2 /* SettingsViewController.swift */,
 				826A209E2380A551002D9081 /* AddEntry.storyboard */,
 				826A20A02380A565002D9081 /* Instructions.storyboard */,
 				826A209C2380A365002D9081 /* MenuTable.storyboard */,
@@ -261,6 +264,7 @@
 				8276512523669FB900EB39E7 /* MenuTableViewCell.swift in Sources */,
 				824BE4C0236BF20E003AD8C1 /* TAPGuideViewController.swift in Sources */,
 				CA9D1E772389DD8E0029A0CF /* imagePageViewController copy.swift in Sources */,
+				5D4EE8312401E2AC005DFEA2 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

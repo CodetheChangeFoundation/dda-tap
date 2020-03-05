@@ -36,30 +36,40 @@ extension mainViewController: mainPageViewControllerDelegate{
 
 
 
-
-
-
-
-
-
 class mainPageViewController: UIPageViewController {
     
     weak var mainDelegate: mainPageViewControllerDelegate?
     
-    private(set) lazy var orderedViewControllers: [UIViewController]={
-        return [self.newViewController(order: "First"),
-                self.newViewController(order: "Second"),
-                self.newViewController(order: "Third")]
+    var switch2State = UserDefaults().string(forKey: "switch2") ?? "On"
+    var switch3State = UserDefaults().string(forKey: "switch3") ?? "On"
+    var switch4State = UserDefaults().string(forKey: "switch4") ?? "On"
+    var switch5State = UserDefaults().string(forKey: "switch5") ?? "On"
+    var switch6State = UserDefaults().string(forKey: "switch6") ?? "On"
+    
+    private lazy var orderedViewControllers: [UIViewController] = {
+        if (switch2State == "On" && switch3State == "On") {
+            return [self.newViewController(order: "First"),
+                    self.newViewController(order: "Second"),
+                    self.newViewController(order: "Third")]
+        }
+        else if (switch2State == "On") {
+            return [self.newViewController(order: "First"),
+                    self.newViewController(order: "Second")]
+        } else if (switch3State == "On") {
+            return [self.newViewController(order: "First"),
+                    self.newViewController(order: "Third")]
+        } else {
+            return [self.newViewController(order: "First")]
+        }
     }()
-
+    
     private func newViewController(order:String)->UIViewController{
         return UIStoryboard(name:"Main",bundle:nil).instantiateViewController(withIdentifier: "\(order)ViewController")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
         dataSource = self
         delegate = self
         
@@ -69,8 +79,64 @@ class mainPageViewController: UIPageViewController {
         
         mainDelegate?.mainPageViewController(mainPageViewController: self, didUpdatePageCount: orderedViewControllers.count)
         }
-    }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        switch2State = UserDefaults().string(forKey: "switch2") ?? "On"
+        switch3State = UserDefaults().string(forKey: "switch3") ?? "On"
+        switch4State = UserDefaults().string(forKey: "switch4") ?? "On"
+        switch5State = UserDefaults().string(forKey: "switch5") ?? "On"
+        switch6State = UserDefaults().string(forKey: "switch6") ?? "On"
+        
+        // Do any additional setup after loading the view.
+        
+        orderedViewControllers = {
+            if (switch2State == "On" && switch3State == "On") {
+                return [self.newViewController(order: "First"),
+                        self.newViewController(order: "Second"),
+                        self.newViewController(order: "Third")]
+            }
+            else if (switch2State == "On") {
+                return [self.newViewController(order: "First"),
+                        self.newViewController(order: "Second")]
+            } else if (switch3State == "On") {
+                return [self.newViewController(order: "First"),
+                        self.newViewController(order: "Third")]
+            } else {
+                return [self.newViewController(order: "First")]
+            }
+        }()
+//        orderedViewControllers = {
+//                return [self.newViewController(order: "First")]
+//        }()
+//        if (switch2State == "On") {
+//            orderedViewControllers.append(self.newViewController(order: "Second"))
+//        }
+//        if (switch3State == "On") {
+//            orderedViewControllers.append(self.newViewController(order: "Third"))
+//        }
+//        if (switch4State == "On") {
+//            orderedViewControllers.append(self.newViewController(order: "Fourth"))
+//        }
+//        if (switch5State == "On") {
+//            orderedViewControllers.append(self.newViewController(order: "Fifth"))
+//        }
+//        if (switch6State == "On") {
+//            orderedViewControllers.append(self.newViewController(order: "Sixth"))
+//        }
+        
+        dataSource = nil
+        
+        dataSource = self
+        delegate = self
+        
+        if let firstViewController = orderedViewControllers.first{
+            setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
+        }
+        
+        mainDelegate?.mainPageViewController(mainPageViewController: self, didUpdatePageCount: orderedViewControllers.count)
+    }
+}
     /*
     // MARK: - Navigation
 
@@ -105,6 +171,7 @@ protocol mainPageViewControllerDelegate:class {
 
 extension mainPageViewController: UIPageViewControllerDataSource{
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        
         guard let ViewControllerIndex=orderedViewControllers.index(of: viewController) else{
             return nil
         }
