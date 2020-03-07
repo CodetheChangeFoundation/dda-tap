@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TAPKit
 
 
 class mainViewController: UIViewController{
