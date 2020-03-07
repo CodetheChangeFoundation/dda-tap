@@ -26,7 +26,7 @@ class PopUpViewController: UIViewController, AVAudioPlayerDelegate, UIGestureRec
             DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) { // sleep 3 seconds before playing sound
                 self.audioPlayer?.play()
             }
-                audioPlayer?.numberOfLoops = -1; // looops on repeat
+                //audioPlayer?.numberOfLoops = -1; // looops on repeat
             
         } catch {
             print("error")
