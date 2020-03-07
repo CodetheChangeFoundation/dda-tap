@@ -23,11 +23,21 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
     var audioExists: Bool!
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var takePhotoButton: UIButton!
+    @IBOutlet weak var cameraButton: UIButton!
+    @IBOutlet weak var saveEntry: UIButton!
     
     enum AddEntryError : Error {
         case noCameraInSimulator
     }
     
+    override func viewDidLayoutSubviews() {
+        setButtonStyle(button: playButton)
+        setButtonStyle(button: takePhotoButton)
+        setButtonStyle(button: cameraButton)
+        setButtonStyle(button: saveEntry)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         //        let img: UIImage = UIImage(named: "TakePictureImage")
@@ -66,6 +76,13 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
         }
         
         audioExists = false
+    }
+    
+    func setButtonStyle(button: UIButton) {
+        let inset: CGFloat = 8.0
+        button.contentEdgeInsets = UIEdgeInsets(top: 0, left: inset, bottom: 0, right: inset)
+        button.layer.cornerRadius = button.frame.height * 0.2
+        button.backgroundColor = UIColor.lightGray
     }
     
         func startRecording() {
@@ -182,7 +199,7 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
         return getDocumentsDirectory().appendingPathComponent("audio.m4a")
     }
     
-    //
+
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
         if !flag {
             finishRecording(success: false)
