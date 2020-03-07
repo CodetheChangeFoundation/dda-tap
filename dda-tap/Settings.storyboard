@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CAw-dy-dv1">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CAw-dy-dv1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="yGl-Ai-22E">
-                                <rect key="frame" x="15" y="30" width="345" height="582"/>
+                                <rect key="frame" x="15" y="50" width="345" height="562"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dh0-0W-fcx">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
@@ -33,7 +35,7 @@
                                                 <rect key="frame" x="0.0" y="17.5" width="167.5" height="74"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VolumeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XwK-He-tzT">
-                                                        <rect key="frame" x="0.0" y="0.0" width="167.50000000000003" height="74"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="74"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
@@ -54,26 +56,29 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kpy-vN-dLW">
-                                        <rect key="frame" x="0.0" y="279" width="345" height="303"/>
+                                        <rect key="frame" x="0.0" y="279" width="345" height="283"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Oge-VC-jQN">
-                                                <rect key="frame" x="0.0" y="0.0" width="345" height="36.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="345" height="32.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tim-YD-mbQ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="36.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="32.5"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Screen2" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MEK-Gv-RZg">
-                                                                <rect key="frame" x="43.5" y="0.0" width="82" height="36.5"/>
+                                                                <rect key="frame" x="47" y="0.0" width="75" height="32.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Y6-zV-dHz">
-                                                        <rect key="frame" x="176.5" y="3" width="168.5" height="31"/>
+                                                        <rect key="frame" x="176.5" y="1" width="168.5" height="31"/>
                                                         <subviews>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QuQ-qt-SWn">
                                                                 <rect key="frame" x="60" y="0.0" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="toggleSwitch1:" destination="CAw-dy-dv1" eventType="valueChanged" id="2jp-B6-ATY"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                     </stackView>
@@ -83,23 +88,26 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZYQ-Va-uWR">
-                                                <rect key="frame" x="0.0" y="66.5" width="345" height="36.5"/>
+                                                <rect key="frame" x="0.0" y="62.5" width="345" height="32.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="N9w-JB-ozS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="36.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="32.5"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Screen3" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z8T-Uq-DD1">
-                                                                <rect key="frame" x="43.5" y="0.0" width="82" height="36.5"/>
+                                                                <rect key="frame" x="47" y="0.0" width="75" height="32.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dH6-2p-hZb">
-                                                        <rect key="frame" x="176.5" y="3" width="168.5" height="31"/>
+                                                        <rect key="frame" x="176.5" y="1" width="168.5" height="31"/>
                                                         <subviews>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WHl-mv-KZG">
                                                                 <rect key="frame" x="60" y="0.0" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="toggleSwitch2:" destination="CAw-dy-dv1" eventType="valueChanged" id="8Qi-Ri-Xdm"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                     </stackView>
@@ -109,23 +117,26 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fT9-tn-TjJ">
-                                                <rect key="frame" x="0.0" y="133" width="345" height="37"/>
+                                                <rect key="frame" x="0.0" y="125" width="345" height="33"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fuj-a1-aci">
-                                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="37"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="33"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Screen4" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PRQ-UE-Cg2">
-                                                                <rect key="frame" x="43" y="0.0" width="83" height="37"/>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Screen4" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PRQ-UE-Cg2" userLabel="Text3">
+                                                                <rect key="frame" x="46.5" y="0.0" width="76" height="33"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tFK-yh-oPv">
-                                                        <rect key="frame" x="176.5" y="3" width="168.5" height="31"/>
+                                                        <rect key="frame" x="176.5" y="1" width="168.5" height="31"/>
                                                         <subviews>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5IJ-uF-nYs">
                                                                 <rect key="frame" x="60" y="0.0" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="toggleSwitch3:" destination="CAw-dy-dv1" eventType="valueChanged" id="Afp-nM-q8b"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                     </stackView>
@@ -135,23 +146,26 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="baP-d5-5CN">
-                                                <rect key="frame" x="0.0" y="200" width="345" height="36.5"/>
+                                                <rect key="frame" x="0.0" y="188" width="345" height="32.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bsy-tG-Ae6">
-                                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="36.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="32.5"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Screen5" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PNS-DQ-RQZ">
-                                                                <rect key="frame" x="43.5" y="0.0" width="82" height="36.5"/>
+                                                                <rect key="frame" x="47" y="0.0" width="75" height="32.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6uI-7a-OWj">
-                                                        <rect key="frame" x="176.5" y="2.5" width="168.5" height="31"/>
+                                                        <rect key="frame" x="176.5" y="0.5" width="168.5" height="31"/>
                                                         <subviews>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cX1-gE-WCX">
                                                                 <rect key="frame" x="60" y="0.0" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="toggleSwitch4:" destination="CAw-dy-dv1" eventType="valueChanged" id="RB4-J4-blN"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                     </stackView>
@@ -161,23 +175,26 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Fbj-R4-vId">
-                                                <rect key="frame" x="0.0" y="266.5" width="345" height="36.5"/>
+                                                <rect key="frame" x="0.0" y="250.5" width="345" height="32.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nlq-o6-GyD">
-                                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="36.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="32.5"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Screen6" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Che-tU-GRb">
-                                                                <rect key="frame" x="43.5" y="0.0" width="82" height="36.5"/>
+                                                                <rect key="frame" x="47" y="0.0" width="75" height="32.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="k9z-Xh-lrW">
-                                                        <rect key="frame" x="176.5" y="2.5" width="168.5" height="31"/>
+                                                        <rect key="frame" x="176.5" y="0.5" width="168.5" height="31"/>
                                                         <subviews>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4bR-uE-dkR">
                                                                 <rect key="frame" x="60" y="0.0" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="toggleSwitch5:" destination="CAw-dy-dv1" eventType="valueChanged" id="NhJ-v9-5rc"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                     </stackView>
@@ -208,6 +225,13 @@
                         <viewLayoutGuide key="safeArea" id="TPJ-QN-8O7"/>
                     </view>
                     <navigationItem key="navigationItem" id="GOp-Wq-d6c"/>
+                    <connections>
+                        <outlet property="switch1" destination="QuQ-qt-SWn" id="0BI-L7-NQV"/>
+                        <outlet property="switch2" destination="WHl-mv-KZG" id="pNr-U1-Imj"/>
+                        <outlet property="switch3" destination="5IJ-uF-nYs" id="S5c-JA-dUp"/>
+                        <outlet property="switch4" destination="cX1-gE-WCX" id="Gnl-2z-uuy"/>
+                        <outlet property="switch5" destination="4bR-uE-dkR" id="4ry-gc-0v0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ys9-8d-lGg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
