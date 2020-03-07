@@ -20,6 +20,11 @@ class mainViewController: UIViewController{
             mainPageViewController.mainDelegate = self
         }
     }
+    @IBAction func unwindToMain(_ unwindSegue: UIStoryboardSegue) {
+        let sourceViewController = unwindSegue.source
+        // Use data from the view controller which initiated the unwind segue
+    }
+
 }
     
 extension mainViewController: mainPageViewControllerDelegate{
@@ -68,6 +73,7 @@ class mainPageViewController: UIPageViewController {
         }
         
         mainDelegate?.mainPageViewController(mainPageViewController: self, didUpdatePageCount: orderedViewControllers.count)
+        print("hihihih")
         }
     }
 
@@ -153,4 +159,6 @@ extension mainPageViewController: UIPageViewControllerDataSource{
         
     }
  */
+    
+    
 }

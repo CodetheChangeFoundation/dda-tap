@@ -21,15 +21,23 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
     var audioPlayer : AVAudioPlayer?
     var aLabel: UILabel!
     var audioExists: Bool!
+    
+    static var num_firstPage=1
+    
+    var img=UIImage()
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
+    
+    @IBOutlet weak var selectedImageView: UIImageView!
+    
+    //    @IBOutlet weak var image_1: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //        let img: UIImage = UIImage(named: "TakePictureImage")
         view.backgroundColor = UIColor(red: 0.6, green: 0, blue: 0, alpha: 1)
         
-        selectedImageView.image = UIImage(named: "TakePictureImage")
+//        selectedImageView.image = UIImage(named: "TakePictureImage")
         cameraImagePickerController = UIImagePickerController()
         recordingSession = AVAudioSession.sharedInstance()
         // https://stackoverflow.com/questions/27423243/swift-avaudioplayer-wont-play-audio-recorded-with-avaudiorecorder
@@ -111,6 +119,9 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
             let alert = UIAlertController(title: "No audio clip selected", message: "You need to select an audio clip before you can save!", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true)
+        } else{
+            saveImage(imageName: "image_1")
+//            getImage(imageName: "image_1")
         }
         
     }
@@ -219,7 +230,7 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
     }
     
     
-    @IBOutlet weak var selectedImageView: UIImageView!
+
 
     
     @IBAction func onPhotoButton(_ sender: Any) {
@@ -257,23 +268,63 @@ class AddEntryViewController: UIViewController, UINavigationControllerDelegate, 
         // get image path
         let imagePath = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(imageName)
         // obtain image taken with camera
-        let img = selectedImageView.image!
+        img = selectedImageView.image!
         let data = UIImagePNGRepresentation(img)
         // store file in document directory
 //        fileManager.createFile(atPath: imagePath as String, contents: data, attributes: nil)
+//        let image1:UIImage? = UIImage(contentsOfFile: imagePath)
+        performSegue(withIdentifier: "changeImage", sender: self)
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender:Any?){
+        let vc=segue.destination as! ImageViewController
+        
     
-    func getImage(imageName: String){
-        let fileManager = FileManager.default
-        let imagePath = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(imageName)
-        if fileManager.fileExists(atPath: imagePath){
-            selectedImageView.image = UIImage(contentsOfFile: imagePath)
+        AddEntryViewController.num_firstPage=UserDefaults.standard.object(forKey: "num_first_page") as! Int
+        vc.num=AddEntryViewController.num_firstPage
+        
+        
+        if(AddEntryViewController.self.num_firstPage==1){
+            vc.img_1=self.img
+            AddEntryViewController.self.num_firstPage=2
+            UserDefaults.standard.set(AddEntryViewController.num_firstPage,forKey: "num_first_page")
+        }else if(AddEntryViewController.self.num_firstPage==2){
+            vc.img_2=self.img
+            AddEntryViewController.self.num_firstPage=3
+            UserDefaults.standard.set(AddEntryViewController.num_firstPage,forKey: "num_first_page")
+        }else if(AddEntryViewController.self.num_firstPage==3){
+            vc.img_3=self.img
+            AddEntryViewController.self.num_firstPage=4
+            UserDefaults.standard.set(AddEntryViewController.num_firstPage,forKey: "num_first_page")
+        }else if(AddEntryViewController.self.num_firstPage==4){
+            vc.img_4=self.img
+            AddEntryViewController.self.num_firstPage=5
+            UserDefaults.standard.set(AddEntryViewController.num_firstPage,forKey: "num_first_page")
+        }else if(AddEntryViewController.self.num_firstPage==5){
+            vc.img_5=self.img
+            AddEntryViewController.self.num_firstPage=6
+            UserDefaults.standard.set(AddEntryViewController.num_firstPage,forKey: "num_first_page")
         }else{
-            print("ERROR: Could not find image :(")
+            vc.img_6=self.img
+            AddEntryViewController.self.num_firstPage=1
+            UserDefaults.standard.set(AddEntryViewController.num_firstPage,forKey: "num_first_page")
         }
     }
+    
+    
+//    func getImage(imageName: String){
+//        let fileManager = FileManager.default
+//        let imagePath = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(imageName)
+//        if fileManager.fileExists(atPath: imagePath){
+////            selectedImageView.image = UIImage(contentsOfFile: imagePath)
+//            let image1:UIImage? = UIImage(contentsOfFile: imagePath)
+//            button_1.setImage(image1, for: UIControl.State.normal)
+//
+//        }else{
+//            print("ERROR: Could not find image :(")
+//        }
+//    }
 
 
 }
