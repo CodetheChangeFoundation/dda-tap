@@ -68,6 +68,9 @@
                                                                 <rect key="frame" x="47" y="0.0" width="75" height="32.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <action selector="onTextField1Changed:" destination="CAw-dy-dv1" eventType="editingDidEnd" id="3DP-xs-mM8"/>
+                                                                </connections>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -97,6 +100,9 @@
                                                                 <rect key="frame" x="47" y="0.0" width="75" height="32.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <action selector="onTextField2Changed:" destination="CAw-dy-dv1" eventType="editingDidEnd" id="sqi-5M-dv9"/>
+                                                                </connections>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -126,6 +132,9 @@
                                                                 <rect key="frame" x="46.5" y="0.0" width="76" height="33"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <action selector="onTextField3Changed:" destination="CAw-dy-dv1" eventType="editingDidEnd" id="Qwz-Nx-DE5"/>
+                                                                </connections>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -155,6 +164,9 @@
                                                                 <rect key="frame" x="47" y="0.0" width="75" height="32.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <action selector="onTextField4Changed:" destination="CAw-dy-dv1" eventType="editingDidEnd" id="eOU-4i-5Uk"/>
+                                                                </connections>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -184,6 +196,9 @@
                                                                 <rect key="frame" x="47" y="0.0" width="75" height="32.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <action selector="onTextField5Changed:" destination="CAw-dy-dv1" eventType="editingDidEnd" id="LGB-73-jKf"/>
+                                                                </connections>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -231,6 +246,11 @@
                         <outlet property="switch3" destination="5IJ-uF-nYs" id="S5c-JA-dUp"/>
                         <outlet property="switch4" destination="cX1-gE-WCX" id="Gnl-2z-uuy"/>
                         <outlet property="switch5" destination="4bR-uE-dkR" id="4ry-gc-0v0"/>
+                        <outlet property="textField1" destination="MEK-Gv-RZg" id="m9w-cs-5Zs"/>
+                        <outlet property="textField2" destination="z8T-Uq-DD1" id="Yz7-Wt-Y9D"/>
+                        <outlet property="textField3" destination="PRQ-UE-Cg2" id="fvw-TD-GBO"/>
+                        <outlet property="textField4" destination="PNS-DQ-RQZ" id="Eve-AF-cTV"/>
+                        <outlet property="textField5" destination="Che-tU-GRb" id="vZ7-yb-Zf2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ys9-8d-lGg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
