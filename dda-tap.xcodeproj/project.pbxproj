@@ -10,6 +10,34 @@
 		5DA7733A23E556A9002288DA /* AddEntryUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA7733923E556A9002288DA /* AddEntryUnitTest.swift */; };
 		5DF384C4241448A2001326DE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF384C3241448A1001326DE /* SettingsViewController.swift */; };
 		5DF5DEC82380AB42002450C1 /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF5DEC72380AB42002450C1 /* AddEntryViewController.swift */; };
+		700E972E240C290D0043ADB5 /* TAPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 700E9727240C290D0043ADB5 /* TAPKit.framework */; };
+		700E972F240C290D0043ADB5 /* TAPKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 700E9727240C290D0043ADB5 /* TAPKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		700E974D240C2CFD0043ADB5 /* TAPKitCentral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700E9735240C2CFC0043ADB5 /* TAPKitCentral.swift */; };
+		700E974E240C2CFD0043ADB5 /* TAPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 700E9736240C2CFC0043ADB5 /* TAPKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		700E9750240C2CFD0043ADB5 /* TAPKitLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700E9739240C2CFC0043ADB5 /* TAPKitLog.swift */; };
+		700E9751240C2CFD0043ADB5 /* TAPCombination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700E973B240C2CFC0043ADB5 /* TAPCombination.swift */; };
+		700E9752240C2CFD0043ADB5 /* TAPCBUUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700E973C240C2CFC0043ADB5 /* TAPCBUUID.swift */; };
+		700E9753240C2CFD0043ADB5 /* TAPAirGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700E973D240C2CFC0043ADB5 /* TAPAirGesture.swift */; };
+		700E9754240C2CFD0043ADB5 /* VersionNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700E973E240C2CFC0043ADB5 /* VersionNumber.swift */; };
+		700E9755240C2CFD0043ADB5 /* TAPInputMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700E973F240C2CFC0043ADB5 /* TAPInputMode.swift */; };
+		700E9756240C2CFD0043ADB5 /* RawSensorDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700E9741240C2CFC0043ADB5 /* RawSensorDataParser.swift */; };
+		700E9757240C2CFD0043ADB5 /* RawSensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700E9742240C2CFC0043ADB5 /* RawSensorData.swift */; };
+		700E9758240C2CFD0043ADB5 /* TAPRawSensorSensitivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700E9743240C2CFC0043ADB5 /* TAPRawSensorSensitivity.swift */; };
+		700E9759240C2CFD0043ADB5 /* TAPDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700E9745240C2CFC0043ADB5 /* TAPDevice.swift */; };
+		700E975A240C2CFD0043ADB5 /* TAPKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700E9746240C2CFD0043ADB5 /* TAPKit.swift */; };
+		700E975B240C2CFD0043ADB5 /* bridge-header.h in Headers */ = {isa = PBXBuildFile; fileRef = 700E9748240C2CFD0043ADB5 /* bridge-header.h */; };
+		700E975C240C2CFD0043ADB5 /* tap_ui_commands_packet.h in Headers */ = {isa = PBXBuildFile; fileRef = 700E9749240C2CFD0043ADB5 /* tap_ui_commands_packet.h */; };
+		700E975D240C2CFD0043ADB5 /* compiler_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 700E974A240C2CFD0043ADB5 /* compiler_helper.h */; };
+		700E975E240C2CFD0043ADB5 /* TAPKitDelegateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700E974C240C2CFD0043ADB5 /* TAPKitDelegateController.swift */; };
+		700E976D240C30530043ADB5 /* TAPKitUnityBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 700E9766240C30530043ADB5 /* TAPKitUnityBridge.framework */; };
+		700E976E240C30530043ADB5 /* TAPKitUnityBridge.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 700E9766240C30530043ADB5 /* TAPKitUnityBridge.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		700E9773240C305C0043ADB5 /* TAPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 700E9727240C290D0043ADB5 /* TAPKit.framework */; };
+		700E9774240C305C0043ADB5 /* TAPKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 700E9727240C290D0043ADB5 /* TAPKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		700E977F240C33A60043ADB5 /* TAPKitObjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 700E9779240C33A60043ADB5 /* TAPKitObjc.h */; };
+		700E9780240C33A60043ADB5 /* TAPKitUnityBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 700E977A240C33A60043ADB5 /* TAPKitUnityBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		700E9781240C33A60043ADB5 /* UnityBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 700E977B240C33A60043ADB5 /* UnityBridge.h */; };
+		700E9782240C33A60043ADB5 /* UnityBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 700E977C240C33A60043ADB5 /* UnityBridge.mm */; };
+		700E9783240C33A60043ADB5 /* TAPKitObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 700E977D240C33A60043ADB5 /* TAPKitObjc.m */; };
 		824BE4BE236BF1B0003AD8C1 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824BE4BD236BF1B0003AD8C1 /* InstructionsViewController.swift */; };
 		824BE4C0236BF20E003AD8C1 /* TAPGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824BE4BF236BF20E003AD8C1 /* TAPGuideViewController.swift */; };
 		826A209D2380A365002D9081 /* MenuTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 826A209C2380A365002D9081 /* MenuTable.storyboard */; };
@@ -28,6 +56,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		700E972C240C290D0043ADB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E44E94A52364D7C600E784B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 700E9726240C290D0043ADB5;
+			remoteInfo = TAPKit;
+		};
+		700E976B240C30530043ADB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E44E94A52364D7C600E784B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 700E9765240C30530043ADB5;
+			remoteInfo = TAPKitUnityBridge;
+		};
+		700E9775240C305C0043ADB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E44E94A52364D7C600E784B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 700E9726240C290D0043ADB5;
+			remoteInfo = TAPKit;
+		};
 		E44E94C22364D7C700E784B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E44E94A52364D7C600E784B2 /* Project object */;
@@ -38,12 +87,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		700E9777240C305D0043ADB5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				700E9774240C305C0043ADB5 /* TAPKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BD894C022364E12E006FEB79 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				700E976E240C30530043ADB5 /* TAPKitUnityBridge.framework in Embed Frameworks */,
+				700E972F240C290D0043ADB5 /* TAPKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +116,32 @@
 		5DA7733923E556A9002288DA /* AddEntryUnitTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntryUnitTest.swift; sourceTree = "<group>"; };
 		5DF384C3241448A1001326DE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5DF5DEC72380AB42002450C1 /* AddEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntryViewController.swift; sourceTree = "<group>"; };
+		700E9727240C290D0043ADB5 /* TAPKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TAPKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		700E9735240C2CFC0043ADB5 /* TAPKitCentral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAPKitCentral.swift; sourceTree = "<group>"; };
+		700E9736240C2CFC0043ADB5 /* TAPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPKit.h; sourceTree = "<group>"; };
+		700E9737240C2CFC0043ADB5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		700E9739240C2CFC0043ADB5 /* TAPKitLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAPKitLog.swift; sourceTree = "<group>"; };
+		700E973B240C2CFC0043ADB5 /* TAPCombination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAPCombination.swift; sourceTree = "<group>"; };
+		700E973C240C2CFC0043ADB5 /* TAPCBUUID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAPCBUUID.swift; sourceTree = "<group>"; };
+		700E973D240C2CFC0043ADB5 /* TAPAirGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAPAirGesture.swift; sourceTree = "<group>"; };
+		700E973E240C2CFC0043ADB5 /* VersionNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionNumber.swift; sourceTree = "<group>"; };
+		700E973F240C2CFC0043ADB5 /* TAPInputMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAPInputMode.swift; sourceTree = "<group>"; };
+		700E9741240C2CFC0043ADB5 /* RawSensorDataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawSensorDataParser.swift; sourceTree = "<group>"; };
+		700E9742240C2CFC0043ADB5 /* RawSensorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawSensorData.swift; sourceTree = "<group>"; };
+		700E9743240C2CFC0043ADB5 /* TAPRawSensorSensitivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAPRawSensorSensitivity.swift; sourceTree = "<group>"; };
+		700E9745240C2CFC0043ADB5 /* TAPDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAPDevice.swift; sourceTree = "<group>"; };
+		700E9746240C2CFD0043ADB5 /* TAPKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAPKit.swift; sourceTree = "<group>"; };
+		700E9748240C2CFD0043ADB5 /* bridge-header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "bridge-header.h"; sourceTree = "<group>"; };
+		700E9749240C2CFD0043ADB5 /* tap_ui_commands_packet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tap_ui_commands_packet.h; sourceTree = "<group>"; };
+		700E974A240C2CFD0043ADB5 /* compiler_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compiler_helper.h; sourceTree = "<group>"; };
+		700E974C240C2CFD0043ADB5 /* TAPKitDelegateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAPKitDelegateController.swift; sourceTree = "<group>"; };
+		700E9766240C30530043ADB5 /* TAPKitUnityBridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TAPKitUnityBridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		700E9778240C33A60043ADB5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		700E9779240C33A60043ADB5 /* TAPKitObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPKitObjc.h; sourceTree = "<group>"; };
+		700E977A240C33A60043ADB5 /* TAPKitUnityBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPKitUnityBridge.h; sourceTree = "<group>"; };
+		700E977B240C33A60043ADB5 /* UnityBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnityBridge.h; sourceTree = "<group>"; };
+		700E977C240C33A60043ADB5 /* UnityBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UnityBridge.mm; sourceTree = "<group>"; };
+		700E977D240C33A60043ADB5 /* TAPKitObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPKitObjc.m; sourceTree = "<group>"; };
 		824BE4BD236BF1B0003AD8C1 /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		824BE4BF236BF20E003AD8C1 /* TAPGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAPGuideViewController.swift; sourceTree = "<group>"; };
 		826A209C2380A365002D9081 /* MenuTable.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MenuTable.storyboard; path = ../MenuTable.storyboard; sourceTree = "<group>"; };
@@ -76,10 +164,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		700E9724240C290D0043ADB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		700E9763240C30530043ADB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700E9773240C305C0043ADB5 /* TAPKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E44E94AA2364D7C700E784B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				700E976D240C30530043ADB5 /* TAPKitUnityBridge.framework in Frameworks */,
+				700E972E240C290D0043ADB5 /* TAPKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,12 +198,116 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		700E9728240C290D0043ADB5 /* TAPKit-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				700E9734240C2CFC0043ADB5 /* Central */,
+				700E9747240C2CFD0043ADB5 /* Common */,
+				700E974B240C2CFD0043ADB5 /* Delegate */,
+				700E973A240C2CFC0043ADB5 /* Helpers */,
+				700E9737240C2CFC0043ADB5 /* Info.plist */,
+				700E9738240C2CFC0043ADB5 /* Log */,
+				700E9744240C2CFC0043ADB5 /* TAPDevice */,
+				700E9736240C2CFC0043ADB5 /* TAPKit.h */,
+				700E9746240C2CFD0043ADB5 /* TAPKit.swift */,
+			);
+			path = "TAPKit-iOS";
+			sourceTree = "<group>";
+		};
+		700E9734240C2CFC0043ADB5 /* Central */ = {
+			isa = PBXGroup;
+			children = (
+				700E9735240C2CFC0043ADB5 /* TAPKitCentral.swift */,
+			);
+			path = Central;
+			sourceTree = "<group>";
+		};
+		700E9738240C2CFC0043ADB5 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				700E9739240C2CFC0043ADB5 /* TAPKitLog.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		700E973A240C2CFC0043ADB5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				700E973B240C2CFC0043ADB5 /* TAPCombination.swift */,
+				700E973C240C2CFC0043ADB5 /* TAPCBUUID.swift */,
+				700E973D240C2CFC0043ADB5 /* TAPAirGesture.swift */,
+				700E973E240C2CFC0043ADB5 /* VersionNumber.swift */,
+				700E973F240C2CFC0043ADB5 /* TAPInputMode.swift */,
+				700E9740240C2CFC0043ADB5 /* RawSensorData */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		700E9740240C2CFC0043ADB5 /* RawSensorData */ = {
+			isa = PBXGroup;
+			children = (
+				700E9741240C2CFC0043ADB5 /* RawSensorDataParser.swift */,
+				700E9742240C2CFC0043ADB5 /* RawSensorData.swift */,
+				700E9743240C2CFC0043ADB5 /* TAPRawSensorSensitivity.swift */,
+			);
+			path = RawSensorData;
+			sourceTree = "<group>";
+		};
+		700E9744240C2CFC0043ADB5 /* TAPDevice */ = {
+			isa = PBXGroup;
+			children = (
+				700E9745240C2CFC0043ADB5 /* TAPDevice.swift */,
+			);
+			path = TAPDevice;
+			sourceTree = "<group>";
+		};
+		700E9747240C2CFD0043ADB5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				700E9748240C2CFD0043ADB5 /* bridge-header.h */,
+				700E9749240C2CFD0043ADB5 /* tap_ui_commands_packet.h */,
+				700E974A240C2CFD0043ADB5 /* compiler_helper.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		700E974B240C2CFD0043ADB5 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				700E974C240C2CFD0043ADB5 /* TAPKitDelegateController.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		700E9767240C30530043ADB5 /* TAPKitUnityBridge */ = {
+			isa = PBXGroup;
+			children = (
+				700E9778240C33A60043ADB5 /* Info.plist */,
+				700E9779240C33A60043ADB5 /* TAPKitObjc.h */,
+				700E977D240C33A60043ADB5 /* TAPKitObjc.m */,
+				700E977A240C33A60043ADB5 /* TAPKitUnityBridge.h */,
+				700E977B240C33A60043ADB5 /* UnityBridge.h */,
+				700E977C240C33A60043ADB5 /* UnityBridge.mm */,
+			);
+			path = TAPKitUnityBridge;
+			sourceTree = "<group>";
+		};
+		700E9772240C305C0043ADB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E44E94A42364D7C600E784B2 = {
 			isa = PBXGroup;
 			children = (
 				E44E94AF2364D7C700E784B2 /* dda-tap */,
 				E44E94C42364D7C700E784B2 /* dda-tapTests */,
+				700E9728240C290D0043ADB5 /* TAPKit-iOS */,
+				700E9767240C30530043ADB5 /* TAPKitUnityBridge */,
 				E44E94AE2364D7C700E784B2 /* Products */,
+				700E9772240C305C0043ADB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +316,8 @@
 			children = (
 				E44E94AD2364D7C700E784B2 /* dda-tap.app */,
 				E44E94C12364D7C700E784B2 /* dda-tapTests.xctest */,
+				700E9727240C290D0043ADB5 /* TAPKit.framework */,
+				700E9766240C30530043ADB5 /* TAPKitUnityBridge.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,7 +359,69 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		700E9722240C290D0043ADB5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700E974E240C2CFD0043ADB5 /* TAPKit.h in Headers */,
+				700E975B240C2CFD0043ADB5 /* bridge-header.h in Headers */,
+				700E975D240C2CFD0043ADB5 /* compiler_helper.h in Headers */,
+				700E975C240C2CFD0043ADB5 /* tap_ui_commands_packet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		700E9761240C30530043ADB5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700E9780240C33A60043ADB5 /* TAPKitUnityBridge.h in Headers */,
+				700E9781240C33A60043ADB5 /* UnityBridge.h in Headers */,
+				700E977F240C33A60043ADB5 /* TAPKitObjc.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		700E9726240C290D0043ADB5 /* TAPKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 700E9732240C290D0043ADB5 /* Build configuration list for PBXNativeTarget "TAPKit" */;
+			buildPhases = (
+				700E9723240C290D0043ADB5 /* Sources */,
+				700E9724240C290D0043ADB5 /* Frameworks */,
+				700E9722240C290D0043ADB5 /* Headers */,
+				700E9725240C290D0043ADB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TAPKit;
+			productName = TAPKit;
+			productReference = 700E9727240C290D0043ADB5 /* TAPKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		700E9765240C30530043ADB5 /* TAPKitUnityBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 700E976F240C30530043ADB5 /* Build configuration list for PBXNativeTarget "TAPKitUnityBridge" */;
+			buildPhases = (
+				700E9761240C30530043ADB5 /* Headers */,
+				700E9762240C30530043ADB5 /* Sources */,
+				700E9763240C30530043ADB5 /* Frameworks */,
+				700E9764240C30530043ADB5 /* Resources */,
+				700E9777240C305D0043ADB5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				700E9776240C305C0043ADB5 /* PBXTargetDependency */,
+			);
+			name = TAPKitUnityBridge;
+			productName = TAPKitUnityBridge;
+			productReference = 700E9766240C30530043ADB5 /* TAPKitUnityBridge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		E44E94AC2364D7C700E784B2 /* dda-tap */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E44E94CA2364D7C700E784B2 /* Build configuration list for PBXNativeTarget "dda-tap" */;
@@ -161,6 +434,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				700E972D240C290D0043ADB5 /* PBXTargetDependency */,
+				700E976C240C30530043ADB5 /* PBXTargetDependency */,
 			);
 			name = "dda-tap";
 			productName = "dda-tap";
@@ -195,6 +470,15 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Code the Change";
 				TargetAttributes = {
+					700E9726240C290D0043ADB5 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+						ProvisioningStyle = Automatic;
+					};
+					700E9765240C30530043ADB5 = {
+						CreatedOnToolsVersion = 11.3.1;
+						ProvisioningStyle = Automatic;
+					};
 					E44E94AC2364D7C700E784B2 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 1110;
@@ -223,11 +507,27 @@
 			targets = (
 				E44E94AC2364D7C700E784B2 /* dda-tap */,
 				E44E94C02364D7C700E784B2 /* dda-tapTests */,
+				700E9726240C290D0043ADB5 /* TAPKit */,
+				700E9765240C30530043ADB5 /* TAPKitUnityBridge */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		700E9725240C290D0043ADB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		700E9764240C30530043ADB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E44E94AB2364D7C700E784B2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,6 +553,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		700E9723240C290D0043ADB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700E974D240C2CFD0043ADB5 /* TAPKitCentral.swift in Sources */,
+				700E9755240C2CFD0043ADB5 /* TAPInputMode.swift in Sources */,
+				700E975E240C2CFD0043ADB5 /* TAPKitDelegateController.swift in Sources */,
+				700E9758240C2CFD0043ADB5 /* TAPRawSensorSensitivity.swift in Sources */,
+				700E9759240C2CFD0043ADB5 /* TAPDevice.swift in Sources */,
+				700E975A240C2CFD0043ADB5 /* TAPKit.swift in Sources */,
+				700E9757240C2CFD0043ADB5 /* RawSensorData.swift in Sources */,
+				700E9753240C2CFD0043ADB5 /* TAPAirGesture.swift in Sources */,
+				700E9751240C2CFD0043ADB5 /* TAPCombination.swift in Sources */,
+				700E9754240C2CFD0043ADB5 /* VersionNumber.swift in Sources */,
+				700E9750240C2CFD0043ADB5 /* TAPKitLog.swift in Sources */,
+				700E9752240C2CFD0043ADB5 /* TAPCBUUID.swift in Sources */,
+				700E9756240C2CFD0043ADB5 /* RawSensorDataParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		700E9762240C30530043ADB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700E9783240C33A60043ADB5 /* TAPKitObjc.m in Sources */,
+				700E9782240C33A60043ADB5 /* UnityBridge.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E44E94A92364D7C700E784B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,6 +609,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		700E972D240C290D0043ADB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 700E9726240C290D0043ADB5 /* TAPKit */;
+			targetProxy = 700E972C240C290D0043ADB5 /* PBXContainerItemProxy */;
+		};
+		700E976C240C30530043ADB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 700E9765240C30530043ADB5 /* TAPKitUnityBridge */;
+			targetProxy = 700E976B240C30530043ADB5 /* PBXContainerItemProxy */;
+		};
+		700E9776240C305C0043ADB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 700E9726240C290D0043ADB5 /* TAPKit */;
+			targetProxy = 700E9775240C305C0043ADB5 /* PBXContainerItemProxy */;
+		};
 		E44E94C32364D7C700E784B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E44E94AC2364D7C700E784B2 /* dda-tap */;
@@ -330,6 +674,154 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		700E9730240C290D0043ADB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					arm64,
+					armv7,
+				);
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
+				DEVELOPMENT_TEAM = M76QN4P3BD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/TAPKit-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tapwithus.TAPKit-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		700E9731240C290D0043ADB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					arm64,
+					armv7,
+				);
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
+				DEVELOPMENT_TEAM = M76QN4P3BD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/TAPKit-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tapwithus.TAPKit-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		700E9770240C30530043ADB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = M76QN4P3BD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = TAPKitUnityBridge/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tapwithus.TAPKitUnityBridge;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		700E9771240C30530043ADB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = M76QN4P3BD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = TAPKitUnityBridge/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tapwithus.TAPKitUnityBridge;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		E44E94C82364D7C700E784B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -440,6 +932,7 @@
 		E44E94CB2364D7C700E784B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M76QN4P3BD;
@@ -459,6 +952,7 @@
 		E44E94CC2364D7C700E784B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M76QN4P3BD;
@@ -510,6 +1004,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		700E9732240C290D0043ADB5 /* Build configuration list for PBXNativeTarget "TAPKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				700E9730240C290D0043ADB5 /* Debug */,
+				700E9731240C290D0043ADB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		700E976F240C30530043ADB5 /* Build configuration list for PBXNativeTarget "TAPKitUnityBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				700E9770240C30530043ADB5 /* Debug */,
+				700E9771240C30530043ADB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E44E94A82364D7C600E784B2 /* Build configuration list for PBXProject "dda-tap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
