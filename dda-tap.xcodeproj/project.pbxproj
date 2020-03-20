@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5DA7733A23E556A9002288DA /* AddEntryUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA7733923E556A9002288DA /* AddEntryUnitTest.swift */; };
+		5DF384C4241448A2001326DE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF384C3241448A1001326DE /* SettingsViewController.swift */; };
 		5DF5DEC82380AB42002450C1 /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF5DEC72380AB42002450C1 /* AddEntryViewController.swift */; };
 		700E972E240C290D0043ADB5 /* TAPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 700E9727240C290D0043ADB5 /* TAPKit.framework */; };
 		700E972F240C290D0043ADB5 /* TAPKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 700E9727240C290D0043ADB5 /* TAPKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -113,6 +114,7 @@
 
 /* Begin PBXFileReference section */
 		5DA7733923E556A9002288DA /* AddEntryUnitTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntryUnitTest.swift; sourceTree = "<group>"; };
+		5DF384C3241448A1001326DE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5DF5DEC72380AB42002450C1 /* AddEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntryViewController.swift; sourceTree = "<group>"; };
 		700E9727240C290D0043ADB5 /* TAPKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TAPKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		700E9735240C2CFC0043ADB5 /* TAPKitCentral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAPKitCentral.swift; sourceTree = "<group>"; };
@@ -323,6 +325,7 @@
 		E44E94AF2364D7C700E784B2 /* dda-tap */ = {
 			isa = PBXGroup;
 			children = (
+				5DF384C3241448A1001326DE /* SettingsViewController.swift */,
 				CA9D1E762389DD8E0029A0CF /* imagePageViewController copy.swift */,
 				826A20A32380A5C6002D9081 /* TAPGuide.storyboard */,
 				5DF5DEC72380AB42002450C1 /* AddEntryViewController.swift */,
@@ -590,6 +593,7 @@
 				8276512523669FB900EB39E7 /* MenuTableViewCell.swift in Sources */,
 				824BE4C0236BF20E003AD8C1 /* TAPGuideViewController.swift in Sources */,
 				CA9D1E772389DD8E0029A0CF /* imagePageViewController copy.swift in Sources */,
+				5DF384C4241448A2001326DE /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
